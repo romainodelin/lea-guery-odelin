@@ -4,6 +4,7 @@
   "description": "Site web professionnel de Léa Guéry-Odelin - Harpiste",
   "scripts": {
     "dev": "npx http-server . -p 8000 -c-1",
+    "cms": "npx decap-server",
     "build": "node scripts/build.js && node scripts/generate-html.js",
     "deploy": "firebase deploy --project site-lea-484923"
   },

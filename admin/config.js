@@ -1,16 +1,16 @@
 window.CMS_MANUAL_INIT = true;
 
-const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-
 const config = {
-  backend: isLocal
-    ? { name: 'test-repo' }
-    : {
-        name: 'github',
-        repo: 'romaingueryodelin/lea-guery-odelin',
-        branch: 'main',
-        auth_endpoint: '/auth.html',
-      },
+  backend: {
+    name: 'github',
+    repo: 'romaingueryodelin/lea-guery-odelin',
+    branch: 'main',
+    auth_endpoint: '/auth.html',
+  },
+  // On localhost, Decap CMS auto-detects this and talks to a local proxy
+  // server (`npx decap-server`, port 8081) instead of GitHub, reading and
+  // writing the real files in content/ directly. Run it alongside `npm run dev`.
+  local_backend: true,
   media_folder: 'DB/uploads',
   public_folder: '/DB/uploads',
   publish_mode: 'editorial_workflow',
