@@ -1,2 +1,2 @@
-image: "./DB/Images/image3.jpg"
+image: "/DB/Images/image3.jpg"
 alt: "Photo 3"

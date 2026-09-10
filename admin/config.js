@@ -11,8 +11,11 @@ const config = {
   // server (`npx decap-server`, port 8081) instead of GitHub, reading and
   // writing the real files in content/ directly. Run it alongside `npm run dev`.
   local_backend: true,
-  media_folder: 'DB/uploads',
-  public_folder: '/DB/uploads',
+  // Covers the whole DB/ tree, not just uploads/, since existing site
+  // images already live at DB/*.jpg and DB/Images/*.jpg - Decap's media
+  // preview/picker needs the real image to be reachable under this folder.
+  media_folder: 'DB',
+  public_folder: '/DB',
   publish_mode: 'editorial_workflow',
   i18n: {
     structure: 'multiple_folders',

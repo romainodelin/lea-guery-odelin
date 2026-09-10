@@ -9,77 +9,77 @@
   },
   "gallery": [
     {
-      "image": "./DB/Images/image1.jpg",
+      "image": "/DB/Images/image1.jpg",
       "alt": "Performance 1",
       "id": "image1"
     },
     {
-      "image": "./DB/Images/image10.jpg",
+      "image": "/DB/Images/image10.jpg",
       "alt": "Photo 10",
       "id": "image10"
     },
     {
-      "image": "./DB/Images/image11.jpg",
+      "image": "/DB/Images/image11.jpg",
       "alt": "Photo 11",
       "id": "image11"
     },
     {
-      "image": "./DB/Images/image12.jpg",
+      "image": "/DB/Images/image12.jpg",
       "alt": "Photo 12",
       "id": "image12"
     },
     {
-      "image": "./DB/Images/image13.jpg",
+      "image": "/DB/Images/image13.jpg",
       "alt": "Photo 13",
       "id": "image13"
     },
     {
-      "image": "./DB/Images/image14.jpg",
+      "image": "/DB/Images/image14.jpg",
       "alt": "Photo 14",
       "id": "image14"
     },
     {
-      "image": "./DB/Images/image15.jpg",
+      "image": "/DB/Images/image15.jpg",
       "alt": "Photo 15",
       "id": "image15"
     },
     {
-      "image": "./DB/Images/image2.jpg",
+      "image": "/DB/Images/image2.jpg",
       "alt": "Photo 2",
       "id": "image2"
     },
     {
-      "image": "./DB/Images/image3.jpg",
+      "image": "/DB/Images/image3.jpg",
       "alt": "Photo 3",
       "id": "image3"
     },
     {
-      "image": "./DB/Images/image4.jpg",
+      "image": "/DB/Images/image4.jpg",
       "alt": "Photo 4",
       "id": "image4"
     },
     {
-      "image": "./DB/Images/image5.jpg",
+      "image": "/DB/Images/image5.jpg",
       "alt": "Photo 5",
       "id": "image5"
     },
     {
-      "image": "./DB/Images/image6.jpg",
+      "image": "/DB/Images/image6.jpg",
       "alt": "Photo 6",
       "id": "image6"
     },
     {
-      "image": "./DB/Images/image7.jpg",
+      "image": "/DB/Images/image7.jpg",
       "alt": "Photo 7",
       "id": "image7"
     },
     {
-      "image": "./DB/Images/image8.jpg",
+      "image": "/DB/Images/image8.jpg",
       "alt": "Photo 8",
       "id": "image8"
     },
     {
-      "image": "./DB/Images/image9.jpg",
+      "image": "/DB/Images/image9.jpg",
       "alt": "Photo 9",
       "id": "image9"
     }
@@ -89,19 +89,19 @@
       "title": "Léa Guéry-Odelin",
       "subtitle": "Harpiste Professionnelle – Vienne",
       "description": "Concerts d'exception pour orchestres, institutions et cérémonies prestigieuses",
-      "image": "./DB/victor-serban-0fl9EOrYgb8-unsplash.jpg"
+      "image": "/DB/victor-serban-0fl9EOrYgb8-unsplash.jpg"
     },
     "en": {
       "title": "Léa Guéry-Odelin",
       "subtitle": "Harpiste Professionnelle – Vienne",
       "description": "Concerts d'exception pour orchestres, institutions et cérémonies prestigieuses",
-      "image": "./DB/victor-serban-0fl9EOrYgb8-unsplash.jpg"
+      "image": "/DB/victor-serban-0fl9EOrYgb8-unsplash.jpg"
     },
     "de": {
       "title": "Léa Guéry-Odelin",
       "subtitle": "Harpiste Professionnelle – Vienne",
       "description": "Concerts d'exception pour orchestres, institutions et cérémonies prestigieuses",
-      "image": "./DB/victor-serban-0fl9EOrYgb8-unsplash.jpg"
+      "image": "/DB/victor-serban-0fl9EOrYgb8-unsplash.jpg"
     }
   },
   "about": {
@@ -109,19 +109,19 @@
       "title": "L'Artiste",
       "biography_1": "Harpiste de formation internationale, diplômée du Conservatoire Régional de Tours et en Bachelor spécialisé à l'université MDW de Vienne. Léa incarne l'excellence artistique et la rigueur professionnelle, maîtrisant les contrastes les plus délicats du répertoire classique aux symphonies orchestrales d'envergure.",
       "biography_2": "Régulièrement appelée pour les événements d'institutions prestigieuses, de cérémonies d'État et de concerts privés de très haut niveau, elle apporte à chaque prestation une dimension artistique exceptionnelle. Son approche allie écoute raffinée, technique impeccable et présence scénique remarquable.",
-      "portrait_image": "./DB/Lea-Guery.jpg"
+      "portrait_image": "/DB/Lea-Guery.jpg"
     },
     "en": {
       "title": "The Artist",
       "biography_1": "International trained harpist, graduate of the Conservatoire Régional de Tours and currently pursuing a specialized Bachelor at MDW University in Vienna. Léa embodies artistic excellence and professional rigor, mastering the most delicate contrasts from classical repertoire to grand-scale symphonies.",
       "biography_2": "Regularly called for prestigious institutions, state ceremonies and high-level private concerts, she brings exceptional artistic dimension to every performance. Her approach combines refined listening, impeccable technique and remarkable stage presence.",
-      "portrait_image": "./DB/Lea-Guery.jpg"
+      "portrait_image": "/DB/Lea-Guery.jpg"
     },
     "de": {
       "title": "Die Künstlerin",
       "biography_1": "International ausgebildete Harfenistin, Absolventin des Conservatoire Régional de Tours und derzeit in einem spezialisierten Bachelor an der MDW Universität Wien. Léa verkörpert künstlerische Exzellenz und berufliche Präzision und beherrscht die subtilsten Kontraste vom klassischen Repertoire bis zu großangelegten Sinfonien.",
       "biography_2": "Regelmäßig für prestigeträchtige Institutionen, staatliche Zeremonien und hochwertige Privatkonzerte engagiert, bringt sie zu jedem Auftritt eine außergewöhnliche künstlerische Dimension. Ihr Ansatz verbindet verfeinerte Musikalität, makellose Technik und bemerkenswerte Bühnenpräsenz.",
-      "portrait_image": "./DB/Lea-Guery.jpg"
+      "portrait_image": "/DB/Lea-Guery.jpg"
     }
   },
   "contact": {
