@@ -3,7 +3,7 @@ window.CMS_MANUAL_INIT = true;
 const config = {
   backend: {
     name: 'github',
-    repo: 'romaingueryodelin/lea-guery-odelin',
+    repo: 'romainodelin/lea-guery-odelin',
     branch: 'main',
     // Self-hosted OAuth provider (Cloudflare Pages Functions) since this
     // site isn't on Netlify - handles the GitHub login handshake.
