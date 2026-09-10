@@ -1,0 +1,513 @@
+{
+  "settings": {
+    "site_title": "Léa Guéry-Odelin - Harpiste Professionnelle",
+    "site_description": "Harpiste professionnelle - Concerts, événements, mariages, formations",
+    "contact_email": "bureau@lecresvb.fr",
+    "logo_fr": "/DB/Logo_traductions/fr.webp",
+    "logo_en": "/DB/Logo_traductions/en.png",
+    "logo_de": "/DB/Logo_traductions/de.avif"
+  },
+  "gallery": [
+    {
+      "image": "./DB/Images/image1.jpg",
+      "alt": "Performance 1",
+      "id": "image1"
+    },
+    {
+      "image": "./DB/Images/image2.jpg",
+      "alt": "Photo 2",
+      "id": "image2"
+    },
+    {
+      "image": "./DB/Images/image3.jpg",
+      "alt": "Photo 3",
+      "id": "image3"
+    },
+    {
+      "image": "./DB/Images/image4.jpg",
+      "alt": "Photo 4",
+      "id": "image4"
+    },
+    {
+      "image": "./DB/Images/image5.jpg",
+      "alt": "Photo 5",
+      "id": "image5"
+    },
+    {
+      "image": "./DB/Images/image6.jpg",
+      "alt": "Photo 6",
+      "id": "image6"
+    }
+  ],
+  "hero": {
+    "fr": {
+      "title": "Léa Guéry-Odelin",
+      "subtitle": "Harpiste Professionnelle – Vienne",
+      "description": "Concerts d'exception pour orchestres, institutions et cérémonies prestigieuses",
+      "image": "./DB/victor-serban-0fl9EOrYgb8-unsplash.jpg"
+    },
+    "en": {
+      "title": "Léa Guéry-Odelin",
+      "subtitle": "Harpiste Professionnelle – Vienne",
+      "description": "Concerts d'exception pour orchestres, institutions et cérémonies prestigieuses",
+      "image": "./DB/victor-serban-0fl9EOrYgb8-unsplash.jpg"
+    },
+    "de": {
+      "title": "Léa Guéry-Odelin",
+      "subtitle": "Harpiste Professionnelle – Vienne",
+      "description": "Concerts d'exception pour orchestres, institutions et cérémonies prestigieuses",
+      "image": "./DB/victor-serban-0fl9EOrYgb8-unsplash.jpg"
+    }
+  },
+  "about": {
+    "fr": {
+      "title": "L'Artiste",
+      "biography_1": "Harpiste de formation internationale, diplômée du Conservatoire Régional de Tours et en Bachelor spécialisé à l'université MDW de Vienne. Léa incarne l'excellence artistique et la rigueur professionnelle, maîtrisant les contrastes les plus délicats du répertoire classique aux symphonies orchestrales d'envergure.",
+      "biography_2": "Régulièrement appelée pour les événements d'institutions prestigieuses, de cérémonies d'État et de concerts privés de très haut niveau, elle apporte à chaque prestation une dimension artistique exceptionnelle. Son approche allie écoute raffinée, technique impeccable et présence scénique remarquable.",
+      "portrait_image": "./DB/Lea-Guery.jpg"
+    },
+    "en": {
+      "title": "The Artist",
+      "biography_1": "International trained harpist, graduate of the Conservatoire Régional de Tours and currently pursuing a specialized Bachelor at MDW University in Vienna. Léa embodies artistic excellence and professional rigor, mastering the most delicate contrasts from classical repertoire to grand-scale symphonies.",
+      "biography_2": "Regularly called for prestigious institutions, state ceremonies and high-level private concerts, she brings exceptional artistic dimension to every performance. Her approach combines refined listening, impeccable technique and remarkable stage presence.",
+      "portrait_image": "./DB/Lea-Guery.jpg"
+    },
+    "de": {
+      "title": "Die Künstlerin",
+      "biography_1": "International ausgebildete Harfenistin, Absolventin des Conservatoire Régional de Tours und derzeit in einem spezialisierten Bachelor an der MDW Universität Wien. Léa verkörpert künstlerische Exzellenz und berufliche Präzision und beherrscht die subtilsten Kontraste vom klassischen Repertoire bis zu großangelegten Sinfonien.",
+      "biography_2": "Regelmäßig für prestigeträchtige Institutionen, staatliche Zeremonien und hochwertige Privatkonzerte engagiert, bringt sie zu jedem Auftritt eine außergewöhnliche künstlerische Dimension. Ihr Ansatz verbindet verfeinerte Musikalität, makellose Technik und bemerkenswerte Bühnenpräsenz.",
+      "portrait_image": "./DB/Lea-Guery.jpg"
+    }
+  },
+  "contact": {
+    "fr": {
+      "title": "Contact",
+      "description": "Discutons de votre projet musical.\n\nRéponse rapide et disponibilité flexible pour vos besoins.\n",
+      "email": "leagueryodelin@gmail.com",
+      "whatsapp": "33781956661",
+      "social_links": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/lea.odelin"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@leaguery2067"
+        }
+      ]
+    },
+    "en": {
+      "title": "Contact",
+      "description": "Let's discuss your musical project.\n\nQuick response and flexible availability for your needs.\n",
+      "email": "leagueryodelin@gmail.com",
+      "whatsapp": "33781956661",
+      "social_links": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/lea.odelin"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@leaguery2067"
+        }
+      ]
+    },
+    "de": {
+      "title": "Kontakt",
+      "description": "Lassen Sie uns über Ihr Musikprojekt sprechen.\n\nSchnelle Antwort und flexible Verfügbarkeit für Ihre Anforderungen.\n",
+      "email": "leagueryodelin@gmail.com",
+      "whatsapp": "33781956661",
+      "social_links": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/lea.odelin"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@leaguery2067"
+        }
+      ]
+    }
+  },
+  "skills": {
+    "fr": [
+      {
+        "title": "Diplôme supérieur en cours",
+        "institution": "MDW – Université de musique et des arts du spectacle de Vienne",
+        "period": "Depuis 2022",
+        "description": "Bachelor – cursus concertiste (harpe)",
+        "highlight_note": "Référence internationale majeure, niveau universitaire, spécialisation concertiste",
+        "id": "bachelor-mdw"
+      },
+      {
+        "title": "Diplôme national spécialisé",
+        "institution": "CRR de Tours – Diplôme d'Études Musicales (DEM)",
+        "period": "Formation 2020–2022",
+        "description": "Obtenu en 2022",
+        "highlight_note": "Diplôme français de référence pré-supérieur, valide le niveau professionnel d'entrée",
+        "id": "dem-tours"
+      }
+    ],
+    "en": [
+      {
+        "title": "Advanced Diploma in Progress",
+        "institution": "MDW – University of Music and Performing Arts Vienna",
+        "period": "Depuis 2022",
+        "description": "Bachelor – cursus concertiste (harpe)",
+        "highlight_note": "Référence internationale majeure, niveau universitaire, spécialisation concertiste",
+        "id": "bachelor-mdw"
+      },
+      {
+        "title": "National Specialized Diploma",
+        "institution": "CRR Tours – Diploma of Musical Studies (DEM)",
+        "period": "Formation 2020–2022",
+        "description": "Obtenu en 2022",
+        "highlight_note": "Diplôme français de référence pré-supérieur, valide le niveau professionnel d'entrée",
+        "id": "dem-tours"
+      }
+    ],
+    "de": [
+      {
+        "title": "Fortgeschrittenes Diplom im Gange",
+        "institution": "MDW – Universität für Musik und darstellende Kunst Wien",
+        "period": "Depuis 2022",
+        "description": "Bachelor – cursus concertiste (harpe)",
+        "highlight_note": "Référence internationale majeure, niveau universitaire, spécialisation concertiste",
+        "id": "bachelor-mdw"
+      },
+      {
+        "title": "Nationales Fachdiplom",
+        "institution": "CRR Tours – Diplom für Musikstudien (DEM)",
+        "period": "Formation 2020–2022",
+        "description": "Obtenu en 2022",
+        "highlight_note": "Diplôme français de référence pré-supérieur, valide le niveau professionnel d'entrée",
+        "id": "dem-tours"
+      }
+    ]
+  },
+  "videos": {
+    "fr": [],
+    "en": [],
+    "de": []
+  },
+  "experiences": {
+    "fr": [
+      {
+        "category": "Formation Académique",
+        "title": "Bachelor Spécialisé - Cursus Concertiste",
+        "institution": "MDW – Université de Musique et des Arts du Spectacle de Vienne",
+        "period": "2022–2026",
+        "description": "Formation internationale de haut niveau, spécialisation concertiste. Référence académique européenne majeure pour le développement technique et artistique.",
+        "id": "01-formation-mdw"
+      },
+      {
+        "category": "Formation Académique",
+        "title": "Diplôme d'Études Musicales (DEM)",
+        "institution": "CRR de Tours",
+        "period": "Obtenu en 2022",
+        "description": "Diplôme français de référence pré-supérieur validant le niveau professionnel d'entrée et la spécialisation harpistique.",
+        "id": "02-dem-tours"
+      },
+      {
+        "category": "Expériences Orchestrales",
+        "title": "Harpiste – Akademisches Symphonie Orchester (ASO), Vienne",
+        "institution": "",
+        "period": "2024–2026",
+        "description": "Expérience orchestrale académique internationale. Répertoire symphonique complet, collaborations avec chefs reconnus, présence en formations majeures.",
+        "id": "03-aso-vienne"
+      },
+      {
+        "category": "Musique de Chambre & Projets Artistiques",
+        "title": "Harpiste – Ensemble « Retro Wien »",
+        "institution": "",
+        "period": "Depuis 2025",
+        "description": "Travail d'ensemble collaboratif, diffusion culturelle régulière, diversification stylistique et exploration musicale.",
+        "id": "04-retro-wien"
+      },
+      {
+        "category": "Musique de Chambre & Projets Artistiques",
+        "title": "Harpiste – Live Music Now (LMN)",
+        "institution": "",
+        "period": "Depuis 2023",
+        "description": "Programme sélectif de concerts solidaires et accessibilité musicale. Forte reconnaissance artistique associée à un impact sociétal positif.",
+        "id": "05-live-music-now"
+      },
+      {
+        "category": "Musique de Chambre & Projets Artistiques",
+        "title": "Harpiste – Première de l'Oratorio « Simone »",
+        "institution": "Votivskirche, Vienne — Compositrice : Franziska Roth",
+        "period": "14 mars 2026",
+        "description": "Création contemporaine en lieu prestigieux. Forte valeur artistique : innovation créative et reconnaissance académique.",
+        "id": "06-oratorio-simone"
+      },
+      {
+        "category": "Expérience Pédagogique",
+        "title": "Professeure de Harpe – Cours Privés, Vienne",
+        "institution": "",
+        "period": "2024–2026",
+        "description": "Enseignement régulier et transmission pédagogique. Autonomie professionnelle, développement de techniques d'enseignement personnalisé.",
+        "id": "07-cours-prives-vienne"
+      },
+      {
+        "category": "Expérience Pédagogique",
+        "title": "Remplacements Institutionnels en Conservatoires",
+        "institution": "",
+        "period": "Février 2024 / Octobre 2021",
+        "description": "CRR de Tours — Remplacement professeure de harpe (février 2024). CRD de Châteauroux — Remplacement professeure de harpe (octobre 2021). Expérience reconnue en conservatoire, crédibilité pédagogique institutionnelle.",
+        "id": "08-remplacements-conservatoires"
+      }
+    ],
+    "en": [
+      {
+        "category": "Formation Académique",
+        "title": "Bachelor Spécialisé - Cursus Concertiste",
+        "institution": "MDW – Université de Musique et des Arts du Spectacle de Vienne",
+        "period": "2022–2026",
+        "description": "Formation internationale de haut niveau, spécialisation concertiste. Référence académique européenne majeure pour le développement technique et artistique.",
+        "id": "01-formation-mdw"
+      },
+      {
+        "category": "Formation Académique",
+        "title": "Diplôme d'Études Musicales (DEM)",
+        "institution": "CRR de Tours",
+        "period": "Obtenu en 2022",
+        "description": "Diplôme français de référence pré-supérieur validant le niveau professionnel d'entrée et la spécialisation harpistique.",
+        "id": "02-dem-tours"
+      },
+      {
+        "category": "Expériences Orchestrales",
+        "title": "Harpiste – Akademisches Symphonie Orchester (ASO), Vienne",
+        "institution": "",
+        "period": "2024–2026",
+        "description": "Expérience orchestrale académique internationale. Répertoire symphonique complet, collaborations avec chefs reconnus, présence en formations majeures.",
+        "id": "03-aso-vienne"
+      },
+      {
+        "category": "Musique de Chambre & Projets Artistiques",
+        "title": "Harpiste – Ensemble « Retro Wien »",
+        "institution": "",
+        "period": "Depuis 2025",
+        "description": "Travail d'ensemble collaboratif, diffusion culturelle régulière, diversification stylistique et exploration musicale.",
+        "id": "04-retro-wien"
+      },
+      {
+        "category": "Musique de Chambre & Projets Artistiques",
+        "title": "Harpiste – Live Music Now (LMN)",
+        "institution": "",
+        "period": "Depuis 2023",
+        "description": "Programme sélectif de concerts solidaires et accessibilité musicale. Forte reconnaissance artistique associée à un impact sociétal positif.",
+        "id": "05-live-music-now"
+      },
+      {
+        "category": "Musique de Chambre & Projets Artistiques",
+        "title": "Harpiste – Première de l'Oratorio « Simone »",
+        "institution": "Votivskirche, Vienne — Compositrice : Franziska Roth",
+        "period": "14 mars 2026",
+        "description": "Création contemporaine en lieu prestigieux. Forte valeur artistique : innovation créative et reconnaissance académique.",
+        "id": "06-oratorio-simone"
+      },
+      {
+        "category": "Expérience Pédagogique",
+        "title": "Professeure de Harpe – Cours Privés, Vienne",
+        "institution": "",
+        "period": "2024–2026",
+        "description": "Enseignement régulier et transmission pédagogique. Autonomie professionnelle, développement de techniques d'enseignement personnalisé.",
+        "id": "07-cours-prives-vienne"
+      },
+      {
+        "category": "Expérience Pédagogique",
+        "title": "Remplacements Institutionnels en Conservatoires",
+        "institution": "",
+        "period": "Février 2024 / Octobre 2021",
+        "description": "CRR de Tours — Remplacement professeure de harpe (février 2024). CRD de Châteauroux — Remplacement professeure de harpe (octobre 2021). Expérience reconnue en conservatoire, crédibilité pédagogique institutionnelle.",
+        "id": "08-remplacements-conservatoires"
+      }
+    ],
+    "de": [
+      {
+        "category": "Formation Académique",
+        "title": "Bachelor Spécialisé - Cursus Concertiste",
+        "institution": "MDW – Université de Musique et des Arts du Spectacle de Vienne",
+        "period": "2022–2026",
+        "description": "Formation internationale de haut niveau, spécialisation concertiste. Référence académique européenne majeure pour le développement technique et artistique.",
+        "id": "01-formation-mdw"
+      },
+      {
+        "category": "Formation Académique",
+        "title": "Diplôme d'Études Musicales (DEM)",
+        "institution": "CRR de Tours",
+        "period": "Obtenu en 2022",
+        "description": "Diplôme français de référence pré-supérieur validant le niveau professionnel d'entrée et la spécialisation harpistique.",
+        "id": "02-dem-tours"
+      },
+      {
+        "category": "Expériences Orchestrales",
+        "title": "Harpiste – Akademisches Symphonie Orchester (ASO), Vienne",
+        "institution": "",
+        "period": "2024–2026",
+        "description": "Expérience orchestrale académique internationale. Répertoire symphonique complet, collaborations avec chefs reconnus, présence en formations majeures.",
+        "id": "03-aso-vienne"
+      },
+      {
+        "category": "Musique de Chambre & Projets Artistiques",
+        "title": "Harpiste – Ensemble « Retro Wien »",
+        "institution": "",
+        "period": "Depuis 2025",
+        "description": "Travail d'ensemble collaboratif, diffusion culturelle régulière, diversification stylistique et exploration musicale.",
+        "id": "04-retro-wien"
+      },
+      {
+        "category": "Musique de Chambre & Projets Artistiques",
+        "title": "Harpiste – Live Music Now (LMN)",
+        "institution": "",
+        "period": "Depuis 2023",
+        "description": "Programme sélectif de concerts solidaires et accessibilité musicale. Forte reconnaissance artistique associée à un impact sociétal positif.",
+        "id": "05-live-music-now"
+      },
+      {
+        "category": "Musique de Chambre & Projets Artistiques",
+        "title": "Harpiste – Première de l'Oratorio « Simone »",
+        "institution": "Votivskirche, Vienne — Compositrice : Franziska Roth",
+        "period": "14 mars 2026",
+        "description": "Création contemporaine en lieu prestigieux. Forte valeur artistique : innovation créative et reconnaissance académique.",
+        "id": "06-oratorio-simone"
+      },
+      {
+        "category": "Expérience Pédagogique",
+        "title": "Professeure de Harpe – Cours Privés, Vienne",
+        "institution": "",
+        "period": "2024–2026",
+        "description": "Enseignement régulier et transmission pédagogique. Autonomie professionnelle, développement de techniques d'enseignement personnalisé.",
+        "id": "07-cours-prives-vienne"
+      },
+      {
+        "category": "Expérience Pédagogique",
+        "title": "Remplacements Institutionnels en Conservatoires",
+        "institution": "",
+        "period": "Février 2024 / Octobre 2021",
+        "description": "CRR de Tours — Remplacement professeure de harpe (février 2024). CRD de Châteauroux — Remplacement professeure de harpe (octobre 2021). Expérience reconnue en conservatoire, crédibilité pédagogique institutionnelle.",
+        "id": "08-remplacements-conservatoires"
+      }
+    ]
+  },
+  "services": {
+    "fr": [
+      {
+        "title": "Collaboration Orchestrale & Institutionnelle",
+        "audience": "Orchestres • Conservatoires • Ambassades",
+        "description": "Mise à disposition d'une expertise technique et artistique pour vos formations symphoniques et ensembles de chambre. Maîtrise du répertoire classique et contemporain sous la direction de chefs internationaux.",
+        "id": "collaboration-orchestrale"
+      },
+      {
+        "title": "Événementiel de Prestige & Cérémonies",
+        "audience": "Mariages de luxe • Mairies • Réceptions privées",
+        "description": "Création d'une atmosphère sonore sur mesure pour vos moments d'exception. Un répertoire élégant, allant des chefs-d'œuvre classiques aux arrangements modernes, adapté au prestige de votre événement.",
+        "id": "evenementiel-prestige"
+      },
+      {
+        "title": "Transmission & Projets de Création",
+        "audience": "Écoles • Artistes • Institutions culturelles",
+        "description": "Accompagnement pédagogique en conservatoire et collaborations artistiques transversales. De l'enseignement de la harpe à la conception de projets musicaux innovants.",
+        "id": "transmission-creation"
+      }
+    ],
+    "en": [
+      {
+        "title": "Collaboration Orchestrale & Institutionnelle",
+        "audience": "Orchestres • Conservatoires • Ambassades",
+        "description": "Mise à disposition d'une expertise technique et artistique pour vos formations symphoniques et ensembles de chambre. Maîtrise du répertoire classique et contemporain sous la direction de chefs internationaux.",
+        "id": "collaboration-orchestrale"
+      },
+      {
+        "title": "Événementiel de Prestige & Cérémonies",
+        "audience": "Mariages de luxe • Mairies • Réceptions privées",
+        "description": "Création d'une atmosphère sonore sur mesure pour vos moments d'exception. Un répertoire élégant, allant des chefs-d'œuvre classiques aux arrangements modernes, adapté au prestige de votre événement.",
+        "id": "evenementiel-prestige"
+      },
+      {
+        "title": "Transmission & Projets de Création",
+        "audience": "Écoles • Artistes • Institutions culturelles",
+        "description": "Accompagnement pédagogique en conservatoire et collaborations artistiques transversales. De l'enseignement de la harpe à la conception de projets musicaux innovants.",
+        "id": "transmission-creation"
+      }
+    ],
+    "de": [
+      {
+        "title": "Collaboration Orchestrale & Institutionnelle",
+        "audience": "Orchestres • Conservatoires • Ambassades",
+        "description": "Mise à disposition d'une expertise technique et artistique pour vos formations symphoniques et ensembles de chambre. Maîtrise du répertoire classique et contemporain sous la direction de chefs internationaux.",
+        "id": "collaboration-orchestrale"
+      },
+      {
+        "title": "Événementiel de Prestige & Cérémonies",
+        "audience": "Mariages de luxe • Mairies • Réceptions privées",
+        "description": "Création d'une atmosphère sonore sur mesure pour vos moments d'exception. Un répertoire élégant, allant des chefs-d'œuvre classiques aux arrangements modernes, adapté au prestige de votre événement.",
+        "id": "evenementiel-prestige"
+      },
+      {
+        "title": "Transmission & Projets de Création",
+        "audience": "Écoles • Artistes • Institutions culturelles",
+        "description": "Accompagnement pédagogique en conservatoire et collaborations artistiques transversales. De l'enseignement de la harpe à la conception de projets musicaux innovants.",
+        "id": "transmission-creation"
+      }
+    ]
+  },
+  "events": {
+    "fr": [],
+    "en": [],
+    "de": []
+  },
+  "testimonials": {
+    "fr": [
+      {
+        "author": "Conservatoire Régional de Tours",
+        "text": "Un talent remarquable associé à une rigueur professionnelle et une disponibilité sans égale.",
+        "id": "crr-tours"
+      },
+      {
+        "author": "Live Music Now Austria",
+        "text": "Léa apporte une dimension artistique exceptionnelle à chaque collaboration. Fiabilité et excellence garanties.",
+        "id": "live-music-now"
+      },
+      {
+        "author": "Orchestre Académique de Vienne",
+        "text": "Une présence musicale d'une grande sensibilité et d'une professionnalité irréprochable.",
+        "id": "orchestre-vienne"
+      }
+    ],
+    "en": [
+      {
+        "author": "Conservatoire Régional de Tours",
+        "text": "Un talent remarquable associé à une rigueur professionnelle et une disponibilité sans égale.",
+        "id": "crr-tours"
+      },
+      {
+        "author": "Live Music Now Austria",
+        "text": "Léa apporte une dimension artistique exceptionnelle à chaque collaboration. Fiabilité et excellence garanties.",
+        "id": "live-music-now"
+      },
+      {
+        "author": "Orchestre Académique de Vienne",
+        "text": "Une présence musicale d'une grande sensibilité et d'une professionnalité irréprochable.",
+        "id": "orchestre-vienne"
+      }
+    ],
+    "de": [
+      {
+        "author": "Conservatoire Régional de Tours",
+        "text": "Un talent remarquable associé à une rigueur professionnelle et une disponibilité sans égale.",
+        "id": "crr-tours"
+      },
+      {
+        "author": "Live Music Now Austria",
+        "text": "Léa apporte une dimension artistique exceptionnelle à chaque collaboration. Fiabilité et excellence garanties.",
+        "id": "live-music-now"
+      },
+      {
+        "author": "Orchestre Académique de Vienne",
+        "text": "Une présence musicale d'une grande sensibilité et d'une professionnalité irréprochable.",
+        "id": "orchestre-vienne"
+      }
+    ]
+  }
+}

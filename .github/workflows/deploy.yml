@@ -30,16 +30,16 @@ jobs:
       - name: Build content
         run: npm run build
 
-      - name: Commit updated content.json
+      - name: Commit updated content.json and index.html
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          if git diff --quiet content.json; then
-            echo "content.json unchanged"
+          if git diff --quiet content.json index.html; then
+            echo "content.json / index.html unchanged"
           else
-            git add content.json
-            git commit -m "chore: Update content.json from CMS edits [skip ci]"
+            git add content.json index.html
+            git commit -m "chore: Update content.json and index.html from CMS edits [skip ci]"
             git push
           fi
 

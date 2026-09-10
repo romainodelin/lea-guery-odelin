@@ -2,7 +2,8 @@
 
 /**
  * Build script - Compile YAML content files to JSON
- * Transforms content/*/fr.yml to a single content.json used by the site
+ * Reads content/{collection}/{locale}/{slug}.yml for i18n folder collections
+ * and content/{collection}/{slug}.yml for non-i18n folder collections.
  */
 
 const fs = require('fs');
@@ -11,99 +12,112 @@ const YAML = require('yaml');
 
 const CONTENT_DIR = path.join(__dirname, '../content');
 const OUTPUT_FILE = path.join(__dirname, '../content.json');
+const LOCALES = ['fr', 'en', 'de'];
+
+const I18N_SINGLETONS = ['hero', 'about', 'contact'];
+const I18N_LISTS = ['skills', 'videos', 'experiences', 'services', 'events', 'testimonials'];
+
+function readYamlFile(filePath) {
+  return YAML.parse(fs.readFileSync(filePath, 'utf-8'));
+}
+
+function readI18nSingleton(collection) {
+  const result = {};
+  LOCALES.forEach(locale => {
+    const dir = path.join(CONTENT_DIR, collection, locale);
+    if (!fs.existsSync(dir)) return;
+    const files = fs.readdirSync(dir).filter(f => f.endsWith('.yml'));
+    if (files.length === 0) return;
+    try {
+      result[locale] = readYamlFile(path.join(dir, files[0]));
+    } catch (e) {
+      console.warn(`Warning: Could not read ${collection}/${locale}/${files[0]}`, e.message);
+    }
+  });
+  return result;
+}
+
+function readI18nList(collection) {
+  const result = {};
+  LOCALES.forEach(locale => {
+    result[locale] = [];
+    const dir = path.join(CONTENT_DIR, collection, locale);
+    if (!fs.existsSync(dir)) return;
+    const files = fs.readdirSync(dir).filter(f => f.endsWith('.yml')).sort();
+    files.forEach(file => {
+      try {
+        const data = readYamlFile(path.join(dir, file));
+        data.id = file.replace('.yml', '');
+        result[locale].push(data);
+      } catch (e) {
+        console.warn(`Warning: Could not read ${collection}/${locale}/${file}`, e.message);
+      }
+    });
+  });
+  return result;
+}
+
+function readGallery() {
+  const dir = path.join(CONTENT_DIR, 'gallery');
+  if (!fs.existsSync(dir)) return [];
+  const files = fs.readdirSync(dir).filter(f => f.endsWith('.yml')).sort();
+  return files.map(file => {
+    try {
+      const data = readYamlFile(path.join(dir, file));
+      data.id = file.replace('.yml', '');
+      return data;
+    } catch (e) {
+      console.warn(`Warning: Could not read gallery/${file}`, e.message);
+      return null;
+    }
+  }).filter(Boolean);
+}
 
 function collectContent() {
-  const content = {
-    settings: {},
-    about: {},
-    services: [],
-    skills: [],
-    experiences: [],
-    gallery: [],
-    videos: [],
-    testimonials: [],
-    contact: {},
-    blog: []
-  };
+  const content = { settings: {}, gallery: [] };
 
-  // Read settings
   try {
     const settingsPath = path.join(CONTENT_DIR, 'settings.yml');
     if (fs.existsSync(settingsPath)) {
-      content.settings = YAML.parse(fs.readFileSync(settingsPath, 'utf-8'));
+      content.settings = readYamlFile(settingsPath);
     }
   } catch (e) {
     console.warn('Warning: Could not read settings.yml', e.message);
   }
 
-  // Read localized content (FR, EN, DE)
-  ['fr', 'en', 'de'].forEach(locale => {
-    // About
-    try {
-      const aboutPath = path.join(CONTENT_DIR, 'about', `${locale}.yml`);
-      if (fs.existsSync(aboutPath)) {
-        if (!content.about[locale]) content.about[locale] = {};
-        content.about[locale] = YAML.parse(fs.readFileSync(aboutPath, 'utf-8'));
-      }
-    } catch (e) {
-      console.warn(`Warning: Could not read about/${locale}.yml`, e.message);
-    }
+  content.gallery = readGallery();
 
-    // Contact
-    try {
-      const contactPath = path.join(CONTENT_DIR, 'contact', `${locale}.yml`);
-      if (fs.existsSync(contactPath)) {
-        if (!content.contact[locale]) content.contact[locale] = {};
-        content.contact[locale] = YAML.parse(fs.readFileSync(contactPath, 'utf-8'));
-      }
-    } catch (e) {
-      console.warn(`Warning: Could not read contact/${locale}.yml`, e.message);
-    }
+  I18N_SINGLETONS.forEach(collection => {
+    content[collection] = readI18nSingleton(collection);
   });
 
-  // Read collections (services, skills, experiences, gallery, videos, testimonials, blog)
-  const collections = ['services', 'skills', 'experiences', 'gallery', 'videos', 'testimonials', 'blog'];
-
-  collections.forEach(collection => {
-    const collectionPath = path.join(CONTENT_DIR, collection);
-    if (!fs.existsSync(collectionPath)) return;
-
-    const files = fs.readdirSync(collectionPath);
-    files.forEach(file => {
-      if (!file.endsWith('.yml')) return;
-
-      try {
-        const filePath = path.join(collectionPath, file);
-        const data = YAML.parse(fs.readFileSync(filePath, 'utf-8'));
-        data.id = file.replace('.yml', '');
-        content[collection].push(data);
-      } catch (e) {
-        console.warn(`Warning: Could not read ${collection}/${file}`, e.message);
-      }
-    });
+  I18N_LISTS.forEach(collection => {
+    content[collection] = readI18nList(collection);
   });
 
   return content;
 }
 
 function build() {
-  console.log('🔨 Building content...');
+  console.log('Building content...');
 
   try {
     const content = collectContent();
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(content, null, 2));
-    console.log(`✅ Built successfully: ${OUTPUT_FILE}`);
+    console.log(`Built successfully: ${OUTPUT_FILE}`);
     console.log(`   - Settings: ${Object.keys(content.settings).length} fields`);
+    console.log(`   - Hero: ${Object.keys(content.hero).length} languages`);
     console.log(`   - About: ${Object.keys(content.about).length} languages`);
-    console.log(`   - Services: ${content.services.length} items`);
-    console.log(`   - Skills: ${content.skills.length} items`);
-    console.log(`   - Experiences: ${content.experiences.length} items`);
     console.log(`   - Gallery: ${content.gallery.length} images`);
-    console.log(`   - Videos: ${content.videos.length} videos`);
-    console.log(`   - Testimonials: ${content.testimonials.length} items`);
-    console.log(`   - Blog: ${content.blog.length} articles`);
+    console.log(`   - Skills (fr): ${content.skills.fr.length} items`);
+    console.log(`   - Experiences (fr): ${content.experiences.fr.length} items`);
+    console.log(`   - Services (fr): ${content.services.fr.length} items`);
+    console.log(`   - Events (fr): ${content.events.fr.length} items`);
+    console.log(`   - Testimonials (fr): ${content.testimonials.fr.length} items`);
+    console.log(`   - Videos (fr): ${content.videos.fr.length} items`);
+    console.log(`   - Contact: ${Object.keys(content.contact).length} languages`);
   } catch (error) {
-    console.error('❌ Build failed:', error.message);
+    console.error('Build failed:', error.message);
     process.exit(1);
   }
 }
