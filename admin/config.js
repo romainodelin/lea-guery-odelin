@@ -5,7 +5,10 @@ const config = {
     name: 'github',
     repo: 'romaingueryodelin/lea-guery-odelin',
     branch: 'main',
-    auth_endpoint: '/auth.html',
+    // Self-hosted OAuth provider (Cloudflare Pages Functions) since this
+    // site isn't on Netlify - handles the GitHub login handshake.
+    base_url: 'https://cms-oauth-lea.pages.dev',
+    auth_endpoint: 'api/auth',
   },
   // On localhost, Decap CMS auto-detects this and talks to a local proxy
   // server (`npx decap-server`, port 8081) instead of GitHub, reading and
