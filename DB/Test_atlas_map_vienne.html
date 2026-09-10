@@ -1,0 +1,64 @@
+<div class="scene">
+  <div class="map">
+    <div class="region"></div>
+    <div class="vienna"></div>
+  </div>
+</div>
+
+<svg width="0" height="0">
+  <defs>
+    <!-- Silhouette abstraite région Vienne -->
+    <clipPath id="region-shape" clipPathUnits="objectBoundingBox">
+      <path d="M0.1,0.2 L0.35,0.1 L0.65,0.15 L0.85,0.35 L0.8,0.65 L0.55,0.85 L0.3,0.8 L0.15,0.55 Z"/>
+    </clipPath>
+
+    <!-- Zone Vienne -->
+    <clipPath id="vienna-shape" clipPathUnits="objectBoundingBox">
+      <circle cx="0.55" cy="0.45" r="0.08"/>
+    </clipPath>
+  </defs>
+</svg>
+body {
+  background: #0e0e11;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: system-ui;
+}
+
+.scene {
+  perspective: 900px;
+}
+
+.map {
+  position: relative;
+  width: 420px;
+  height: 320px;
+  transform-style: preserve-3d;
+  transform: rotateX(18deg) rotateZ(-8deg);
+  transition: transform 0.6s ease;
+}
+
+.map:hover {
+  transform: rotateX(22deg) rotateZ(-6deg);
+}
+
+.region {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, #2f2f36, #1b1b21);
+  clip-path: url(#region-shape);
+  transform: translateZ(20px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
+
+.vienna {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, #4da3ff, #1c6ed5);
+  clip-path: url(#vienna-shape);
+  transform: translateZ(40px);
+  box-shadow:
+    0 0 30px rgba(77,163,255,0.7),
+    0 20px 40px rgba(0,0,0,0.5);
+}

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/romaingueryodelin/Downloads/**)",
+      "Bash(unzip -l cor-skills-main.zip)",
+      "Bash(unzip -q cor-skills-main.zip)",
+      "Bash(cp -r cor-skills-main/* \"/Users/romaingueryodelin/Documents/Site internet lea/\")",
+      "Bash(grep -E \"\\\\.\\(json|md|html\\)$\")",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'feat: Add Decap CMS infrastructure, build scripts, and documentation *)"
+    ]
+  }
+}

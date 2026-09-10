@@ -1,0 +1,3162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Léa Guéry-Odelin - Harpiste</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('6RN2yF7qMAx5LbXHF');
+        })();
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Base - Luxe chaleureux */
+            --cream: #FAF8F5;
+            --cream-darker: #F5F2ED;
+            --charcoal: #2B2B2B;
+            --anthracite: #3D3D3D;
+
+            /* Accents */
+            --brushed-gold: #C9A86A;
+            --gold-muted: #B89968;
+            --gold-pale: #D4C5A9;
+            --deep-night: #1A2332;
+
+            /* Utilitaires */
+            --border-subtle: #E8E5E0;
+            --shadow-soft: rgba(43, 43, 43, 0.08);
+
+            /* Mode sombre - Adaptation luxe */
+            --dark-bg: #0f1419;
+            --dark-card-bg: #1a2332;
+            --dark-text: #f5f5f5;
+            --dark-border: #2a3a4f;
+
+            /* Polices */
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Montserrat', -apple-system, sans-serif;
+
+            /* Échelle de tailles */
+            --text-xs: 0.75rem;
+            --text-sm: 0.875rem;
+            --text-base: 1rem;
+            --text-lg: 1.125rem;
+            --text-xl: 1.5rem;
+            --text-2xl: 2rem;
+            --text-3xl: 2.75rem;
+            --text-4xl: 4.5rem;
+
+            /* Spacing - AUGMENTÉ pour effet grandiose */
+            --section-padding: 240px 80px;
+            --section-gap: 100px;
+
+            /* Hauteurs de ligne */
+            --leading-tight: 1.2;
+            --leading-relaxed: 1.7;
+            --leading-loose: 2;
+
+            /* Espacement lettres */
+            --tracking-wide: 0.05em;
+            --tracking-wider: 0.1em;
+            --tracking-widest: 0.2em;
+
+            /* Hauteur du header pour synchronisation avec nav */
+            --header-height: 110px;
+
+            /* Legacy support */
+            --gold: var(--brushed-gold);
+            --navy: var(--deep-night);
+            --light-bg: var(--cream);
+            --light-bg-soft: var(--cream-darker);
+            --dark-text-legacy: var(--charcoal);
+            --light-text: var(--dark-text);
+            --border: var(--border-subtle);
+            --accent: var(--deep-night);
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: var(--text-base);
+            line-height: var(--leading-relaxed);
+            font-weight: 300;
+            background-color: var(--cream);
+            color: var(--charcoal);
+            transition: background-color 0.3s, color 0.3s;
+            animation: fadeInPage 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        
+
+        @keyframes fadeInPage {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* SCROLL ANIMATIONS */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .fade-in-up.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in-up:nth-child(1).animated { transition-delay: 0s; }
+        .fade-in-up:nth-child(2).animated { transition-delay: 0.1s; }
+        .fade-in-up:nth-child(3).animated { transition-delay: 0.2s; }
+        .fade-in-up:nth-child(4).animated { transition-delay: 0.3s; }
+        .fade-in-up:nth-child(5).animated { transition-delay: 0.4s; }
+        .fade-in-up:nth-child(6).animated { transition-delay: 0.5s; }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            line-height: var(--leading-tight);
+            text-transform: uppercase;
+        }
+
+        section {
+            padding: var(--section-padding) !important;
+        }
+
+        section h2 {
+            font-family: var(--font-display);
+            font-size: var(--text-4xl);
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 120px;
+            line-height: 1.3;
+        }
+
+        section h2::before {
+            display: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* NAVBAR - Simple sticky structure */
+        .navbar {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            background-color: transparent;
+            border-bottom: none;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .navbar.scrolled {
+            background-color: rgba(250, 248, 245, 0.98);
+            border-bottom: 1px solid var(--border-subtle);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        /* NAVBAR TOP - Title + Languages */
+        .navbar-top {
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 110px;
+        }
+
+        .burger-toggle {
+            width: 50px;
+            height: 50px;
+            background: var(--cream-darker);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            padding: 0;
+            transition: all 0.3s;
+        }
+
+        .burger-toggle:hover {
+            background: var(--brushed-gold);
+        }
+
+        .burger-toggle:hover .bar {
+            background-color: var(--charcoal);
+        }
+
+        .burger-toggle .bar {
+            width: 32px;
+            height: 3px;
+            background-color: var(--brushed-gold);
+            transition: all 0.3s;
+            display: block;
+            border-radius: 2px;
+        }
+
+        /* Hamburger animation when menu is active */
+        .burger-toggle.active .bar:nth-child(1) {
+            transform: rotate(45deg) translate(10px, 10px);
+        }
+
+        .burger-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .burger-toggle.active .bar:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        .navbar-brand {
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .navbar-brand h1 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--charcoal);
+            margin: 0;
+            font-style: italic;
+        }
+
+        .navbar-brand p {
+            font-family: var(--font-body);
+            font-size: var(--text-xs);
+            letter-spacing: var(--tracking-wider);
+            text-transform: uppercase;
+            color: var(--brushed-gold);
+            margin: 4px 0 0 0;
+            font-weight: 400;
+        }
+
+        /* LANGUAGE SELECTOR - Dropdown */
+        .language-selector {
+            position: relative;
+            margin-left: auto;
+            z-index: 500;
+        }
+
+        .lang-trigger {
+            background: none;
+            border: none;
+            padding: 8px 12px;
+            font-family: var(--font-body);
+            font-size: var(--text-xs);
+            font-weight: 500;
+            letter-spacing: var(--tracking-wider);
+            text-transform: uppercase;
+            color: var(--anthracite);
+            cursor: pointer;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .lang-trigger::after {
+            content: '▼';
+            font-size: 0.65rem;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .lang-trigger:hover {
+            color: var(--brushed-gold);
+        }
+
+        .lang-trigger:hover::after {
+            opacity: 1;
+        }
+
+/* Dropdown menu */
+        .lang-dropdown {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            background: var(--cream);
+            border: 1px solid var(--border-subtle);
+            border-radius: 0;
+            padding: 0;
+            min-width: 100px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px);
+            transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                        visibility 0.3s,
+                        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+        }
+.language-selector:hover .lang-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .lang-dropdown.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .lang-option {
+            display: block;
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 12px 16px;
+            font-family: var(--font-body);
+            font-size: var(--text-xs);
+            font-weight: 500;
+            letter-spacing: var(--tracking-wider);
+            text-transform: uppercase;
+            color: var(--charcoal);
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .lang-option:last-child {
+            border-bottom: none;
+        }
+.lang-option:hover {
+            background: var(--cream-darker);
+            color: var(--brushed-gold);
+        }
+.lang-option.active {
+            background: var(--cream-darker);
+            color: var(--brushed-gold);
+            font-weight: 600;
+        }
+/* NAVBAR MENU - Navigation links */
+        .navbar-menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            padding: 0;
+            gap: 0;
+            margin: 0;
+            background-color: transparent;
+            border-top: none;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .navbar.scrolled .navbar-menu {
+            background-color: transparent;
+            border-top: none;
+        }
+
+        .navbar-menu li {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        .navbar-menu li a {
+            text-decoration: none;
+            font-family: var(--font-body);
+            font-weight: 400;
+            font-size: var(--text-sm);
+            letter-spacing: var(--tracking-wider);
+            text-transform: uppercase;
+            padding: 16px 28px;
+            color: var(--anthracite);
+            transition: color 0.3s;
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .navbar-menu li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 60%;
+            height: 1px;
+            background: var(--brushed-gold);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .navbar-menu li a:hover,
+        .navbar-menu li a.active {
+            color: var(--brushed-gold);
+        }
+
+        .navbar-menu li a:hover::after,
+        .navbar-menu li a.active::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+            margin-top: 50px;
+        }
+
+        /* HERO SECTION */
+        .hero-section {
+            position: relative;
+            width: 100vw;
+            margin-left: calc(50% - 50vw);
+            height: 90vh;
+            min-height: 600px;
+            max-height: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 0;
+            border: none;
+        }
+
+        .hero-image {
+            position: absolute;
+            inset: 0;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 40%;
+            transform: scale(1);
+            filter: brightness(0.65) contrast(1.15) saturate(0.85);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            padding: 0 40px;
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: 5.5rem;
+            font-weight: 300;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            text-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-display);
+            font-size: var(--text-2xl);
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--brushed-gold);
+            margin-bottom: 60px;
+            font-style: italic;
+        }
+
+        .hero-description {
+            font-family: var(--font-display);
+            font-size: var(--text-base);
+            line-height: var(--leading-loose);
+            font-weight: 300;
+            opacity: 0.95;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 160px 0;
+            border-bottom: 1px solid var(--border);
+            scroll-margin-top: 0;
+            overflow: hidden;
+        }
+
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        section h2 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        section h2::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--gold);
+        }
+
+        /* ABOUT */
+        #about {
+            padding: 160px 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            gap: 120px;
+            align-items: start;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .about-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            overflow: hidden;
+            position: sticky;
+            top: 150px;
+            box-shadow: 0 20px 60px var(--shadow-soft);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(10%) contrast(1.05);
+        }
+
+        .about-text {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--charcoal);
+            font-weight: 300;
+            padding-top: 40px;
+        }
+
+
+        .about-text p {
+            margin-bottom: 60px;
+        }
+
+        .about-text p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .about-text p:first-of-type {
+            font-size: 1.2rem;
+            line-height: 1.95;
+            color: var(--charcoal);
+            font-weight: 300;
+        }
+
+
+        /* GALLERY */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 60px;
+            margin-top: 100px;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            background: var(--cream-darker);
+            cursor: pointer;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px var(--shadow-soft);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: grayscale(20%) contrast(1.05);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+            filter: grayscale(0%);
+        }
+
+        /* SKILLS */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+            margin-top: 100px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .skill-card {
+            padding: 60px 50px;
+            background: var(--light-bg-soft);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--gold);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .skill-card h3 {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--charcoal);
+        }
+
+
+        .skill-card p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--charcoal);
+            opacity: 0.9;
+        }
+
+
+        /* VIDEOS SECTION */
+        .videos-intro {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--dark-text);
+            max-width: 700px;
+        }
+
+
+        /* TEACHING, CONCERTS, PROJECTS SECTIONS */
+        .section-intro {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--dark-text);
+            max-width: 700px;
+            margin-bottom: 50px;
+        }
+
+
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .activity-card {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            border-top: 4px solid var(--gold);
+        }
+
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+
+        .activity-card-period {
+            color: var(--gold);
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .activity-card-title {
+            color: var(--gold);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .activity-card-category {
+            display: inline-block;
+            background: var(--light-bg-soft);
+            color: var(--navy);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            border-left: 3px solid var(--gold);
+        }
+
+
+        .activity-card-description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0 0 15px 0;
+        }
+
+
+        .activity-card-video {
+            margin-top: 15px;
+        }
+
+        .activity-card-video a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .activity-card-video a:hover {
+            color: var(--navy);
+        }
+
+        .no-activities-message {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+            font-size: 1.1rem;
+        }
+
+        /* SERVICES SECTION */
+        .services-intro {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--dark-text);
+            max-width: 700px;
+            margin-bottom: 50px;
+        }
+
+
+        .section-lead {
+            font-family: var(--font-body);
+            font-size: var(--text-lg);
+            line-height: var(--leading-loose);
+            color: var(--anthracite);
+            font-weight: 300;
+            text-align: center;
+            margin: 0 auto 80px;
+        }
+
+
+        .service-description {
+            margin-bottom: 30px !important;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: transparent;
+            padding: 60px 40px;
+            border-radius: 0;
+            box-shadow: none;
+            text-align: center;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            border-top: none;
+            border-bottom: 1px solid var(--border-subtle);
+            position: relative;
+            overflow: visible;
+        }
+
+        .service-card:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .service-icon {
+            display: none;
+        }
+
+        .service-card h3 {
+            font-family: var(--font-display);
+            font-size: var(--text-2xl);
+            color: var(--charcoal);
+            margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: var(--tracking-wide);
+        }
+
+
+        .service-card p {
+            font-family: var(--font-body);
+            font-size: var(--text-base);
+            line-height: var(--leading-relaxed);
+            color: var(--anthracite);
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .service-audience {
+            font-family: var(--font-body);
+            font-size: var(--text-xs);
+            font-weight: 500;
+            letter-spacing: var(--tracking-wider);
+            text-transform: uppercase;
+            color: var(--gold-pale);
+            margin-bottom: 20px;
+            margin-top: -10px;
+        }
+
+        .service-description {
+            font-size: var(--text-base);
+            line-height: 1.8;
+            color: var(--charcoal);
+            margin-bottom: 40px;
+        }
+
+        .service-cta {
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            color: var(--charcoal);
+            text-decoration: none;
+            letter-spacing: var(--tracking-wide);
+            text-transform: uppercase;
+            font-weight: 400;
+            border-bottom: 1px solid var(--charcoal);
+            padding-bottom: 4px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-block;
+        }
+
+        .service-cta:hover {
+            color: var(--gold-pale);
+            border-bottom-color: var(--gold-pale);
+        }
+
+        .service-features {
+            display: none;
+        }
+
+        .service-features li {
+            display: none;
+        }
+
+        .service-features li::before {
+            display: none;
+        }
+
+        /* TESTIMONIALS - SOCIAL PROOF */
+        .testimonials-section {
+            background: linear-gradient(135deg, var(--cream-darker) 0%, var(--cream) 100%);
+            padding: 120px 40px !important;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            padding: 50px 40px;
+            background: white;
+            border-left: 3px solid var(--brushed-gold);
+            box-shadow: 0 8px 30px var(--shadow-soft);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 50px rgba(201, 168, 106, 0.15);
+        }
+
+        .testimonial-text {
+            font-family: var(--font-display);
+            font-size: var(--text-lg);
+            line-height: var(--leading-loose);
+            color: var(--charcoal);
+            margin-bottom: 24px;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .testimonial-author {
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            color: var(--anthracite);
+            letter-spacing: var(--tracking-wide);
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        /* CONTACT */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 100px;
+            align-items: start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info-column {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-label {
+            font-family: var(--font-body);
+            font-size: var(--text-xs);
+            font-weight: 500;
+            letter-spacing: var(--tracking-widest);
+            text-transform: uppercase;
+            color: var(--anthracite);
+        }
+
+
+        .contact-value {
+            font-family: var(--font-body);
+            font-size: var(--text-base);
+            color: var(--charcoal);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+
+        .contact-value:hover {
+            color: var(--gold-pale);
+        }
+
+        /* FORM */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .form-group label {
+            font-family: var(--font-body);
+            font-size: var(--text-xs);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: var(--tracking-widest);
+            color: var(--charcoal);
+        }
+
+
+        .form-group input,
+        .form-group textarea {
+            padding: 16px 0;
+            border: none;
+            border-bottom: 1px solid var(--border-subtle);
+            background: transparent;
+            font-family: var(--font-body);
+            font-size: var(--text-base);
+            color: var(--charcoal);
+            transition: all 0.3s;
+            border-radius: 0;
+            font-weight: 300;
+        }
+
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-bottom-color: var(--gold-pale);
+            box-shadow: none;
+        }
+
+        .form-group textarea {
+            min-height: 160px;
+            resize: vertical;
+            line-height: var(--leading-relaxed);
+        }
+
+        .submit-btn {
+            padding: 16px 40px;
+            background: transparent;
+            color: var(--charcoal);
+            border: 1px solid var(--charcoal);
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            font-weight: 500;
+            letter-spacing: var(--tracking-wider);
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            align-self: flex-start;
+        }
+
+        .submit-btn:hover {
+            background: transparent;
+            color: var(--gold-pale);
+            border-color: var(--gold-pale);
+            transform: translateX(4px);
+        }
+
+        .submit-btn svg {
+            transition: transform 0.3s;
+        }
+
+        .submit-btn:hover svg {
+            transform: translateX(4px);
+        }
+
+        /* SOCIAL Links */
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--charcoal);
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+
+        .social-link:hover {
+            border-color: var(--brushed-gold);
+            color: var(--brushed-gold);
+            transform: translateY(-4px);
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 80px 40px;
+            background: var(--charcoal);
+            color: white;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .footer-column h3 {
+            font-family: var(--font-display);
+            font-size: var(--text-lg);
+            font-weight: 300;
+            letter-spacing: var(--tracking-wide);
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .footer-column p {
+            font-family: var(--font-body);
+            font-size: var(--text-base);
+            line-height: var(--leading-relaxed);
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 300;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            letter-spacing: var(--tracking-wide);
+            transition: color 0.3s;
+            font-weight: 300;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-pale);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-social a {
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            letter-spacing: var(--tracking-wide);
+            text-transform: uppercase;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .footer-social a::before {
+            content: '';
+            margin-right: 0;
+        }
+
+        .footer-social a:hover {
+            color: var(--gold-pale);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 40px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: var(--text-sm);
+            font-family: var(--font-body);
+        }
+
+
+        /* Burger Menu Mobile */
+        .burger-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: transparent;
+            border: none;
+            padding: 10px;
+            z-index: 1001;
+            width: 50px;
+            height: 50px;
+        }
+
+        .burger-toggle .bar {
+            width: 25px;
+            height: 3px;
+            background: var(--dark-text);
+            border-radius: 3px;
+            transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        }
+
+
+        .burger-toggle.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .burger-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .burger-toggle.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            background: var(--cream);
+            border-bottom: 1px solid var(--border-subtle);
+            z-index: 999;
+            flex-direction: column;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        }
+.mobile-menu.active {
+            max-height: 300px;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: var(--charcoal);
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--border-subtle);
+            transition: all 0.3s;
+        }
+.mobile-menu a:hover {
+            background: var(--cream-darker);
+            color: var(--brushed-gold);
+            padding-left: 30px;
+        }
+/* EVENTS SECTION */
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .event-card {
+            background: var(--light-bg-soft);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .event-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+        }
+
+        .event-image {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--brushed-gold), var(--deep-night));
+            position: relative;
+        }
+
+        .event-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            opacity: 0.85;
+        }
+
+        .event-card:hover .event-image img {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+
+        .event-content {
+            padding: 30px;
+        }
+
+        .event-date {
+            display: block;
+            color: var(--brushed-gold);
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            line-height: 1.4;
+        }
+
+        .event-title {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+        }
+
+        .event-description {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--anthracite);
+            margin-bottom: 0;
+            font-weight: 300;
+        }
+
+        /* Responsive Events */
+        @media (max-width: 1024px) {
+            .events-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 35px;
+                margin-top: 50px;
+            }
+
+            .event-card {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            }
+
+            .event-content {
+                padding: 28px;
+            }
+
+            .event-title {
+                font-size: 1.25rem;
+                margin-bottom: 14px;
+            }
+
+            .event-date {
+                font-size: 0.75rem;
+                margin-bottom: 14px;
+            }
+
+            .event-description {
+                font-size: 0.9rem;
+                line-height: 1.7;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .events-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                margin-top: 40px;
+            }
+
+            .event-card {
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            }
+
+            .event-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+            }
+
+            .event-content {
+                padding: 32px;
+            }
+
+            .event-image {
+                height: 220px;
+            }
+
+            .event-title {
+                font-size: 1.2rem;
+                line-height: 1.6;
+                margin-bottom: 16px;
+            }
+
+            .event-date {
+                font-size: 0.8rem;
+                margin-bottom: 16px;
+                letter-spacing: 0.8px;
+            }
+
+            .event-description {
+                font-size: 0.95rem;
+                line-height: 1.9;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .events-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                margin-top: 30px;
+            }
+
+            .event-card {
+                border-radius: 6px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            }
+
+            .event-card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            }
+
+            .event-image {
+                height: 160px;
+            }
+
+            .event-content {
+                padding: 24px;
+            }
+
+            .event-date {
+                font-size: 0.7rem;
+                font-weight: 600;
+                margin-bottom: 12px;
+                letter-spacing: 0.6px;
+                line-height: 1.3;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .event-title {
+                font-family: var(--font-display);
+                font-size: 1.05rem;
+                font-weight: 400;
+                line-height: 1.5;
+                margin-bottom: 12px;
+                letter-spacing: 0.01em;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .event-description {
+                font-size: 0.88rem;
+                line-height: 1.8;
+                min-height: 44px;
+                padding: 8px 0;
+            }
+        }
+
+
+        /* EXPERIENCE FILTERS */
+        /* EXPERIENCES - TIMELINE STRUCTURE */
+        .exp-category {
+            margin-bottom: 140px;
+            position: relative;
+        }
+
+        .exp-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-category-title {
+            font-family: var(--font-display);
+            font-size: var(--text-2xl);
+            font-weight: 300;
+            letter-spacing: var(--tracking-wide);
+            color: var(--charcoal);
+            margin-bottom: 80px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-subtle);
+            text-transform: uppercase;
+        }
+
+        .exp-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .exp-timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--brushed-gold), transparent);
+        }
+
+        .exp-item {
+            display: flex;
+            gap: 40px;
+            position: relative;
+        }
+
+
+        .exp-content {
+            flex: 1;
+            padding: 30px;
+            background: rgba(250, 248, 245, 0.8);
+            border-left: 2px solid var(--brushed-gold);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .exp-item:hover .exp-content {
+            background: rgba(250, 248, 245, 1);
+            box-shadow: 0 12px 40px rgba(43, 43, 43, 0.08);
+            border-left-color: var(--charcoal);
+        }
+
+        .exp-content h4 {
+            font-family: var(--font-display);
+            font-size: var(--text-xl);
+            color: var(--charcoal);
+            margin-bottom: 8px;
+            font-weight: 400;
+            letter-spacing: var(--tracking-wide);
+        }
+
+        .exp-institution {
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            color: var(--brushed-gold);
+            font-weight: 500;
+            letter-spacing: var(--tracking-wider);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .exp-period {
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            color: var(--anthracite);
+            font-weight: 400;
+            margin-bottom: 16px;
+            font-style: italic;
+        }
+
+        .exp-description {
+            font-family: var(--font-body);
+            font-size: var(--text-base);
+            line-height: var(--leading-relaxed);
+            color: var(--anthracite);
+            font-weight: 300;
+            margin: 0;
+        }
+
+        .exp-description strong {
+            font-weight: 500;
+            color: var(--charcoal);
+        }
+
+        /* Responsive Experiences */
+        @media (max-width: 1024px) {
+            .exp-timeline {
+                gap: 60px;
+                padding-left: 50px;
+            }
+
+            .exp-content {
+                padding: 24px;
+            }
+
+            .exp-category-title {
+                font-size: var(--text-xl);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .exp-timeline {
+                padding-left: 40px;
+                gap: 50px;
+            }
+
+            .exp-marker {
+                left: -32px;
+                font-size: 1.5rem;
+                width: 25px;
+                height: 25px;
+            }
+
+            .exp-category {
+                margin-bottom: 100px;
+            }
+
+            .exp-category-title {
+                font-size: var(--text-lg);
+                margin-bottom: 50px;
+            }
+
+            .exp-content {
+                padding: 20px;
+            }
+
+            .exp-content h4 {
+                font-size: var(--text-base);
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .exp-timeline {
+                padding-left: 35px;
+                gap: 40px;
+            }
+
+            .exp-marker {
+                left: -32px;
+                font-size: 1.2rem;
+                width: 22px;
+                height: 22px;
+            }
+
+            .exp-category {
+                margin-bottom: 80px;
+            }
+
+            .exp-category-title {
+                font-size: var(--text-base);
+                margin-bottom: 40px;
+                padding-bottom: 16px;
+            }
+
+            .exp-content {
+                padding: 16px;
+            }
+
+            .exp-content h4 {
+                font-size: 0.95rem;
+                margin-bottom: 6px;
+            }
+
+            .exp-institution {
+                font-size: 0.7rem;
+            }
+
+            .exp-period {
+                font-size: 0.75rem;
+            }
+
+            .exp-description {
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 120px 16px !important;
+            }
+
+            section h2 {
+                font-size: var(--text-2xl);
+                margin-bottom: 60px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        .event-button {
+            display: inline-block;
+            padding: 12px 28px;
+            background: var(--navy);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+            border: 2px solid var(--navy);
+        }
+
+        .event-button:hover {
+            background: var(--gold);
+            color: var(--navy);
+            transform: translateY(-2px);
+        }
+
+
+
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 4rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.5rem;
+            }
+
+            section {
+                padding: 160px 0;
+            }
+
+            :root {
+                --text-3xl: 2.5rem;
+                --text-4xl: 3rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .about-image {
+                position: relative;
+                top: 0;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            .container {
+                margin-top: 80px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .navbar-menu li a {
+                padding: 8px 14px;
+                font-size: 0.85rem;
+            }
+
+            .container {
+                margin-top: 70px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --text-2xl: 1.75rem;
+                --text-3xl: 2rem;
+                --text-4xl: 2.5rem;
+            }
+
+            .navbar-top {
+                padding: 15px 10px;
+                height: 80px;
+            }
+
+            .navbar-brand h1 {
+                font-size: 1rem;
+                letter-spacing: 2px;
+            }
+
+            .lang-btn {
+                padding: 4px 8px;
+                font-size: var(--text-xs);
+            }
+
+            .navbar-languages {
+                gap: 8px;
+            }
+
+            .navbar-brand p {
+                font-size: 0.65rem;
+            }
+
+            /* Hide desktop nav, show burger */
+            .navbar-menu {
+                display: none !important;
+            }
+
+            .burger-toggle {
+                display: flex;
+            }
+
+            .lang-trigger {
+                padding: 6px 10px;
+                font-size: 0.7rem;
+            }
+
+            .lang-dropdown {
+                right: -10px;
+                min-width: 90px;
+            }
+
+            .lang-option {
+                padding: 10px 14px;
+                font-size: 0.7rem;
+            }
+
+            .mobile-menu {
+                display: none;
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--cream);
+                z-index: 998;
+                flex-direction: column;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.4s ease;
+            }
+
+            .mobile-menu.active {
+                display: flex;
+                max-height: 400px;
+            }
+
+            .hero-section {
+                height: 60vh;
+                min-height: 400px;
+            }
+
+            .hero-title {
+                font-size: 1.6rem;
+                line-height: 1.2;
+                margin-bottom: 16px;
+            }
+
+            .hero-subtitle {
+                font-size: 0.95rem;
+                margin-bottom: 30px;
+            }
+
+            .hero-content {
+                padding: 0 20px;
+                max-width: 100%;
+            }
+
+            .hero-description {
+                font-size: 0.95rem;
+            }
+
+            section {
+                padding: 100px 0;
+            }
+
+            section h2 {
+                margin-bottom: 50px;
+            }
+
+            .about-grid,
+            .contact-wrapper,
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 0 20px;
+            }
+
+            .about-image {
+                height: 350px;
+                position: relative;
+                top: 0;
+            }
+
+            .skills-grid,
+            .gallery-grid,
+            .activities-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card {
+                padding: 40px 30px;
+            }
+
+            .container {
+                margin-top: 80px;
+                padding: 0 20px;
+            }
+
+            section {
+                padding: 100px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar-top {
+                padding: 12px 15px;
+                height: 75px;
+            }
+
+            .navbar-brand h1 {
+                font-size: 0.85rem;
+                letter-spacing: 1.5px;
+            }
+
+            .navbar-brand p {
+                font-size: 0.55rem;
+            }
+
+            .hero-title {
+                font-size: 1.3rem;
+                line-height: 1.1;
+                margin-bottom: 12px;
+                letter-spacing: 0.08em;
+            }
+
+            .hero-subtitle {
+                font-size: 0.75rem;
+                margin-bottom: 20px;
+                letter-spacing: 0.15em;
+            }
+
+            .hero-content {
+                padding: 0 16px;
+            }
+
+            .hero-description {
+                font-size: 0.85rem;
+                line-height: 1.6;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 30px;
+            }
+
+            .container {
+                margin-top: 80px;
+                padding: 0 16px;
+            }
+
+            .services-grid,
+            .about-grid,
+            .contact-wrapper {
+                padding: 0;
+            }
+
+            /* Mobile menu ultra-minimaliste */
+            .mobile-menu {
+                flex-direction: column;
+                gap: 0;
+                background: rgba(250, 248, 245, 0.98);
+                padding: 20px 0;
+            }
+
+            .mobile-menu a {
+                padding: 18px 20px;
+                border-bottom: 1px solid var(--border-subtle);
+                font-size: 0.9rem;
+                letter-spacing: var(--tracking-wider);
+                text-transform: uppercase;
+            }
+
+            .mobile-menu a:last-child {
+                border-bottom: none;
+            }
+
+            .mobile-menu a:active,
+            .mobile-menu a:hover {
+                background: rgba(212, 197, 169, 0.1);
+                color: var(--gold-pale);
+            }
+
+            /* Form mobile */
+            .form-group input,
+            .form-group textarea {
+                padding: 14px 0;
+                font-size: 16px;
+            }
+
+            .contact-wrapper {
+                gap: 40px;
+            }
+
+            .footer-content {
+                gap: 30px;
+            }
+
+            .footer-column h3 {
+                font-size: var(--text-base);
+            }
+
+            .navbar-menu {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Section 1: Titre + Langues -->
+        <div class="navbar-top">
+            <button class="burger-toggle" id="burgerToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="navbar-brand">
+                <h1>Léa Guéry-Odelin</h1>
+                <p>Harpiste</p>
+            </div>
+            <div class="language-selector">
+                <button class="lang-trigger" id="langTrigger">FR</button>
+                <div class="lang-dropdown">
+                    <button class="lang-option" data-lang="fr">FR</button>
+                    <button class="lang-option" data-lang="en">EN</button>
+                    <button class="lang-option" data-lang="de">DE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Navigation -->
+        <ul class="navbar-menu">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#services">Mes offres</a></li>
+            <li><a href="#events">Projets en cours</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">À propos</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#skills">Compétences</a>
+        <a href="#services">Mes offres</a>
+        <a href="#events">Projets en cours</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-image" data-parallax="0.5">
+            <img src="./DB/victor-serban-0fl9EOrYgb8-unsplash.jpg" alt="Léa Guéry-Odelin, Harpiste Professionnelle" loading="eager">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Léa Guéry-Odelin</h1>
+            <p class="hero-subtitle">Harpiste Professionnelle – Vienne</p>
+            <p class="hero-description">
+                Concerts d'exception pour orchestres, institutions et cérémonies prestigieuses
+            </p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="about">
+            <h2>L'Artiste</h2>
+            <div class="about-grid">
+                <div class="about-image fade-in-up">
+                    <img src="./DB/Lea-Guery.jpg" alt="Léa Guéry-Odelin">
+                </div>
+                <div class="about-text fade-in-up">
+                    <p>
+                        Harpiste de formation internationale, diplômée du Conservatoire Régional de Tours et en Bachelor spécialisé à l'université MDW de Vienne. Léa incarne l'excellence artistique et la rigueur professionnelle, maîtrisant les contrastes les plus délicats du répertoire classique aux symphonies orchestrales d'envergure.
+                    </p>
+                    <p>
+                        Régulièrement appelée pour les événements d'institutions prestigieuses, de cérémonies d'État et de concerts privés de très haut niveau, elle apporte à chaque prestation une dimension artistique exceptionnelle. Son approche allie écoute raffinée, technique impeccable et présence scénique remarquable.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Galerie</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in-up">
+                    <img src="./DB/Images/image1.jpg" alt="Performance 1" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="./DB/Images/image2.jpg" alt="Photo 2" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="./DB/Images/image3.jpg" alt="Photo 3" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="./DB/Images/image4.jpg" alt="Photo 4" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="./DB/Images/image5.jpg" alt="Photo 5" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="./DB/Images/image6.jpg" alt="Photo 6" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Formation et Diplômes</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Diplôme supérieur en cours</h3>
+                    <p><strong>MDW – Université de musique et des arts du spectacle de Vienne</strong></p>
+                    <p>Bachelor – cursus concertiste (harpe)</p>
+                    <p style="margin-top: 12px; font-size: 0.9rem; opacity: 0.7;">Depuis 2022</p>
+                    <p style="margin-top: 20px; font-size: 0.85rem; color: var(--brushed-gold); font-weight: 500;">Référence internationale majeure, niveau universitaire, spécialisation concertiste</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Diplôme national spécialisé</h3>
+                    <p><strong>CRR de Tours – Diplôme d'Études Musicales (DEM)</strong></p>
+                    <p>Obtenu en 2022</p>
+                    <p style="margin-top: 12px; font-size: 0.9rem; opacity: 0.7;">Formation 2020–2022</p>
+                    <p style="margin-top: 20px; font-size: 0.85rem; color: var(--brushed-gold); font-weight: 500;">Diplôme français de référence pré-supérieur, valide le niveau professionnel d'entrée</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" style="display: none;">
+            <h2>Vidéos & Performances</h2>
+            <p class="videos-intro">
+                Découvrez mes performances en vidéo sur ma chaîne YouTube et mes réseaux sociaux.
+                Suivez mes derniers concerts, créations et moments d'inspiration musicale.
+            </p>
+        </section>
+
+        <section id="experiences">
+            <h2>Parcours Artistique</h2>
+
+            <!-- FORMATION -->
+            <div class="exp-category">
+                <h3 class="exp-category-title">Formation Académique</h3>
+                <div class="exp-timeline">
+                    <div class="exp-item fade-in-up">
+                        <div class="exp-content">
+                            <h4>Bachelor Spécialisé - Cursus Concertiste</h4>
+                            <p class="exp-institution">MDW – Université de Musique et des Arts du Spectacle de Vienne</p>
+                            <p class="exp-period">2022–2026</p>
+                            <p class="exp-description">Formation internationale de haut niveau, spécialisation concertiste. Référence académique européenne majeure pour le développement technique et artistique.</p>
+                        </div>
+                    </div>
+
+                    <div class="exp-item fade-in-up">
+                        <div class="exp-content">
+                            <h4>Diplôme d'Études Musicales (DEM)</h4>
+                            <p class="exp-institution">CRR de Tours</p>
+                            <p class="exp-period">Obtenu en 2022</p>
+                            <p class="exp-description">Diplôme français de référence pré-supérieur validant le niveau professionnel d'entrée et la spécialisation harpistique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ORCHESTRAL -->
+            <div class="exp-category">
+                <h3 class="exp-category-title">Expériences Orchestrales</h3>
+                <div class="exp-timeline">
+                    <div class="exp-item fade-in-up">
+                        <div class="exp-content">
+                            <h4>Harpiste – Akademisches Symphonie Orchester (ASO), Vienne</h4>
+                            <p class="exp-period">2024–2026</p>
+                            <p class="exp-description">Expérience orchestrale académique internationale. Répertoire symphonique complet, collaborations avec chefs reconnus, présence en formations majeures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHAMBRE & ENSEMBLES -->
+            <div class="exp-category">
+                <h3 class="exp-category-title">Musique de Chambre & Projets Artistiques</h3>
+                <div class="exp-timeline">
+                    <div class="exp-item fade-in-up">
+                        <div class="exp-content">
+                            <h4>Harpiste – Ensemble "Retro Wien"</h4>
+                            <p class="exp-period">Depuis 2025</p>
+                            <p class="exp-description">Travail d'ensemble collaboratif, diffusion culturelle régulière, diversification stylistique et exploration musicale.</p>
+                        </div>
+                    </div>
+
+                    <div class="exp-item fade-in-up">
+                        <div class="exp-content">
+                            <h4>Harpiste – Live Music Now (LMN)</h4>
+                            <p class="exp-period">Depuis 2023</p>
+                            <p class="exp-description">Programme sélectif de concerts solidaires et accessibilité musicale. Forte reconnaissance artistique associée à un impact sociétal positif.</p>
+                        </div>
+                    </div>
+
+                    <div class="exp-item fade-in-up">
+                        <div class="exp-content">
+                            <h4>Harpiste – Première de l'Oratorio « Simone »</h4>
+                            <p class="exp-institution">Votivskirche, Vienne — Compositrice : Franziska Roth</p>
+                            <p class="exp-period">14 mars 2026</p>
+                            <p class="exp-description">Création contemporaine en lieu prestigieux. Forte valeur artistique : innovation créative et reconnaissance académique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PÉDAGOGIE -->
+            <div class="exp-category">
+                <h3 class="exp-category-title">Expérience Pédagogique</h3>
+                <div class="exp-timeline">
+                    <div class="exp-item fade-in-up">
+                        <div class="exp-content">
+                            <h4>Professeure de Harpe – Cours Privés, Vienne</h4>
+                            <p class="exp-period">2024–2026</p>
+                            <p class="exp-description">Enseignement régulier et transmission pédagogique. Autonomie professionnelle, développement de techniques d'enseignement personnalisé.</p>
+                        </div>
+                    </div>
+
+                    <div class="exp-item fade-in-up">
+                        <div class="exp-content">
+                            <h4>Remplacements Institutionnels en Conservatoires</h4>
+                            <p class="exp-description">
+                                • <strong>CRR de Tours</strong> — Remplacement professeure de harpe (février 2024)<br>
+                                • <strong>CRD de Châteauroux</strong> — Remplacement professeure de harpe (octobre 2021)<br>
+                                Expérience reconnue en conservatoire, crédibilité pédagogique institutionnelle.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Domaines d'Intervention</h2>
+            <p class="section-lead">
+                Solutions musicales professionnelles pour orchestres, institutions et événements de prestige
+            </p>
+
+            <div class="services-grid">
+                <div class="service-card fade-in-up">
+                    <h3>Collaboration Orchestrale & Institutionnelle</h3>
+                    <p class="service-audience">Orchestres • Conservatoires • Ambassades</p>
+                    <p class="service-description">
+                        Mise à disposition d'une expertise technique et artistique pour vos formations symphoniques et ensembles de chambre. Maîtrise du répertoire classique et contemporain sous la direction de chefs internationaux.
+                    </p>
+                    <a href="#contact" class="service-cta">Discuter de ce projet</a>
+                </div>
+
+                <div class="service-card fade-in-up">
+                    <h3>Événementiel de Prestige & Cérémonies</h3>
+                    <p class="service-audience">Mariages de luxe • Mairies • Réceptions privées</p>
+                    <p class="service-description">
+                        Création d'une atmosphère sonore sur mesure pour vos moments d'exception. Un répertoire élégant, allant des chefs-d'œuvre classiques aux arrangements modernes, adapté au prestige de votre événement.
+                    </p>
+                    <a href="#contact" class="service-cta">Discuter de ce projet</a>
+                </div>
+
+                <div class="service-card fade-in-up">
+                    <h3>Transmission & Projets de Création</h3>
+                    <p class="service-audience">Écoles • Artistes • Institutions culturelles</p>
+                    <p class="service-description">
+                        Accompagnement pédagogique en conservatoire et collaborations artistiques transversales. De l'enseignement de la harpe à la conception de projets musicaux innovants.
+                    </p>
+                    <a href="#contact" class="service-cta">Discuter de ce projet</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="events">
+            <h2>Projets en cours</h2>
+            <div class="events-grid" id="eventsGrid">
+                <!-- Les événements seront générés dynamiquement depuis le Google Sheet -->
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <h2>Reconnaissances & Références</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        « Une présence musicale d'une grande sensibilité et d'une professionnalité irréprochable. »
+                    </p>
+                    <p class="testimonial-author">— Orchestre Académique de Vienne</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        « Léa apporte une dimension artistique exceptionnelle à chaque collaboration. Fiabilité et excellence garanties. »
+                    </p>
+                    <p class="testimonial-author">— Live Music Now Austria</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        « Un talent remarquable associé à une rigueur professionnelle et une disponibilité sans égale. »
+                    </p>
+                    <p class="testimonial-author">— Conservatoire Régional de Tours</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p class="section-lead">
+                Discutons de votre projet musical.<br>
+                Réponse rapide et disponibilité flexible pour vos besoins.
+            </p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info-column">
+                    <div class="contact-info-item">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:leagueryodelin@gmail.com" class="contact-value">leagueryodelin@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-label">Cliquer sur le numéro pour me contacter via WhatsApp</span>
+                        <a href="https://wa.me/33781956661" class="contact-value" target="_blank">+33 7 81 95 66 61</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-label">Réseaux</span>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/lea.odelin" class="social-link" aria-label="Facebook" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com/@leaguery2067" class="social-link" aria-label="YouTube" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Envoyer</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Léa Guéry-Odelin</h3>
+                <p>Harpiste Professionnelle</p>
+                <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 8px;">
+                    Diplômée du CRR de Tours & MDW Vienne<br>
+                    Spécialiste en concerts et performances institutionnelles
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Liens</h3>
+                <div class="footer-links">
+                    <a href="#about">À Propos</a>
+                    <a href="#experiences">Expériences</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Direct</h3>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/lea.odelin" target="_blank">FACEBOOK</a>
+                    <a href="https://www.youtube.com/@leaguery2067" target="_blank">YOUTUBE</a>
+                    <a href="https://wa.me/33781956661" target="_blank">WHATSAPP</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 Léa Guéry-Odelin.
+        </div>
+    </footer>
+
+    <script>
+        // Mobile burger menu
+        const burgerToggle = document.getElementById('burgerToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+
+        burgerToggle.addEventListener('click', () => {
+            burgerToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                burgerToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Header transparent au scroll
+        // Navbar transparent → scrolled
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Effet parallax hero
+        const heroImage = document.querySelector('[data-parallax]');
+        if (heroImage) {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const rate = parseFloat(heroImage.dataset.parallax);
+                heroImage.style.transform = `translateY(${scrolled * rate}px)`;
+            });
+        }
+
+        // SCROLL ANIMATIONS - Intersection Observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -100px 0px',
+            threshold: 0.1
+        };
+
+        const animateOnScroll = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    animateOnScroll.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observer tous les éléments .fade-in-up
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            animateOnScroll.observe(el);
+        });
+
+        // Animated navbar indicator (desktop only)
+        // Experience Filters - Load from Google Sheets
+        const SPREADSHEET_ID = '1-ykF9j2iu1By8OL_WecmUN7JER_8zRbeB8w3V45zl8s';
+        const SHEET_NAME = 'Experiences'; // Modifier si le nom change
+        let experienceData = [];
+        let allCategories = new Set();
+        let minYear = new Date().getFullYear();
+        let maxYear = new Date().getFullYear();
+
+        async function loadExperiencesFromSheet() {
+            try {
+                // Utiliser un proxy CORS pour éviter les restrictions
+                const spreadsheetUrl = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?format=csv&gid=0`;
+                const corsUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(spreadsheetUrl)}`;
+
+                const response = await fetch(corsUrl);
+                const csv = await response.text();
+
+                console.log('CSV chargé:', csv.substring(0, 200)); // Debug
+
+                experienceData = [];
+                allCategories = new Set();
+                let years = [];
+
+                // Parser CSV robuste qui gère les guillemets
+                const parseCSVLine = (line) => {
+                    const result = [];
+                    let current = '';
+                    let insideQuotes = false;
+
+                    for (let i = 0; i < line.length; i++) {
+                        const char = line[i];
+                        const nextChar = line[i + 1];
+
+                        if (char === '"') {
+                            if (insideQuotes && nextChar === '"') {
+                                current += '"';
+                                i++;
+                            } else {
+                                insideQuotes = !insideQuotes;
+                            }
+                        } else if (char === ',' && !insideQuotes) {
+                            result.push(current.trim());
+                            current = '';
+                        } else {
+                            current += char;
+                        }
+                    }
+                    result.push(current.trim());
+                    return result;
+                };
+
+                // Parcer le CSV
+                const lines = csv.split('\n');
+
+                // Sauter la première ligne (en-têtes)
+                for (let i = 1; i < lines.length; i++) {
+                    const line = lines[i].trim();
+                    if (!line) continue;
+
+                    // Utiliser le parser robuste
+                    const cells = parseCSVLine(line);
+
+                    if (cells.length >= 4 && cells[0] && cells[3]) {
+                        const year = parseInt(cells[1]) || new Date().getFullYear();
+                        const langue = (cells[6] || 'FR').trim().toUpperCase(); // Langue par défaut FR
+                        const currentLangUpper = currentLang.toUpperCase();
+
+                        // Filtrer par langue actuelle - seulement si la colonne langue existe et n'est pas vide
+                        if (cells.length >= 7 && cells[6] && cells[6].trim()) {
+                            if (langue !== currentLangUpper) {
+                                continue;
+                            }
+                        }
+                        // Si pas de colonne langue, afficher pour toutes les langues (rétrocompatibilité)
+
+                        const exp = {
+                            category: cells[0],
+                            year: year,
+                            periode: cells[2] || '',
+                            title: cells[3],
+                            description: cells[4] || '',
+                            videoLink: cells[5] || '',
+                            langue: langue,
+                            imageUrl: cells[7] || ''
+                        };
+
+                        experienceData.push(exp);
+                        allCategories.add(exp.category);
+                        years.push(year);
+                    }
+                }
+
+                // Calculer les années min et max
+                if (years.length > 0) {
+                    minYear = Math.min(...years);
+                    maxYear = Math.max(...years);
+                } else {
+                    minYear = new Date().getFullYear();
+                    maxYear = new Date().getFullYear();
+                }
+
+                console.log('Expériences chargées:', experienceData.length, 'Catégories:', Array.from(allCategories)); // Debug
+
+                // Create filter buttons
+                createFilterButtons();
+                // Setup event listeners and sliders FIRST
+                setupExperienceFilters();
+                // Then render experiences with initialized sliders
+                renderExperiences();
+            } catch (error) {
+                console.error('Erreur chargement Google Sheets:', error);
+            }
+        }
+
+        function createFilterButtons() {
+            const container = document.getElementById('expThemeContainer');
+            if (!container) return; // Skip if element doesn't exist
+
+            container.innerHTML = '';
+
+            allCategories.forEach(category => {
+                const btn = document.createElement('button');
+                btn.className = 'exp-theme-btn active';
+                btn.dataset.filter = category;
+                btn.textContent = category;
+                container.appendChild(btn);
+            });
+        }
+
+        function renderExperiences() {
+            const masonry = document.getElementById('expMasonry');
+            if (!masonry) return; // Skip if element doesn't exist
+
+            masonry.innerHTML = '';
+
+            const expYearStartEl = document.getElementById('expYearStart');
+            const expYearEndEl = document.getElementById('expYearEnd');
+            const expYearStart = expYearStartEl ? parseInt(expYearStartEl.value) : 2000;
+            const expYearEnd = expYearEndEl ? parseInt(expYearEndEl.value) : 2099;
+
+            // Get active categories (default to all if none selected)
+            const activeButtons = document.querySelectorAll('.exp-theme-btn.active');
+            let activeCategories = Array.from(activeButtons).map(btn => btn.dataset.filter);
+
+            // If no categories are selected, show all
+            if (activeCategories.length === 0) {
+                activeCategories = Array.from(allCategories);
+            }
+
+            let visibleCount = 0;
+
+            experienceData.forEach(exp => {
+                if (activeCategories.includes(exp.category) && exp.year >= expYearStart && exp.year <= expYearEnd) {
+                    // Palette de 15 couleurs
+                    const colorPalette = [
+                        '#d4a574', // Doré
+                        '#1e3a5f', // Navy
+                        '#2196F3', // Bleu
+                        '#FF9800', // Orange
+                        '#9C27B0', // Violet
+                        '#00BCD4', // Cyan
+                        '#4CAF50', // Vert
+                        '#E91E63', // Rose
+                        '#FF5722', // Orange foncé
+                        '#795548', // Marron
+                        '#FF6B6B', // Rouge vif
+                        '#20C997', // Teal
+                        '#FFD43B', // Jaune
+                        '#A78BFA', // Violet clair
+                        '#F97316'  // Orange vif
+                    ];
+
+                    // Récupérer le mapping des catégories depuis localStorage
+                    let categoryColorMap = JSON.parse(localStorage.getItem('categoryColorMap')) || {};
+
+                    // Si la catégorie n'a pas encore de couleur, en attribuer une aléatooire
+                    if (!categoryColorMap[exp.category]) {
+                        const randomColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+                        categoryColorMap[exp.category] = randomColor;
+                        localStorage.setItem('categoryColorMap', JSON.stringify(categoryColorMap));
+                    }
+
+                    const borderColor = categoryColorMap[exp.category];
+
+                    const card = document.createElement('div');
+                    card.className = 'exp-item';
+                    card.dataset.category = exp.category;
+                    card.dataset.year = exp.year;
+
+                    card.style.cssText = `
+                        background: #ffffff;
+                        padding: 25px;
+                        border-radius: 12px;
+                        margin-bottom: 30px;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                        break-inside: avoid;
+                        transition: all 0.3s;
+                        border-top: 4px solid ${borderColor};
+                    `;
+
+                    let imageHtml = exp.imageUrl ? `<div style="margin: -25px -25px 20px -25px; overflow: hidden; border-radius: 12px 12px 0 0;"><img src="${exp.imageUrl}" alt="${exp.title}" style="width: 100%; height: 200px; object-fit: cover; display: block;"></div>` : '';
+
+                    let html = `
+                        ${imageHtml}
+                        <div style="color: #d4a574; font-weight: bold; margin-bottom: 10px; font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase;">${exp.periode}</div>
+                        <h3 style="color: #d4a574; font-size: 1.3rem; margin-bottom: 12px; font-weight: 600;">${exp.title}</h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;">
+                            <span style="display: inline-block; background: var(--light-bg-soft); color: #1e3a5f; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; border-left: 3px solid ${borderColor};">${exp.category}</span>
+                        </div>
+                        <p style="color: #666; font-size: 0.95rem; line-height: 1.6; margin: 0;">${exp.description}</p>
+                    `;
+
+                    if (exp.videoLink) {
+                        html += `<div style="margin-top: 15px;"><a href="${exp.videoLink}" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #d4a574; text-decoration: none; font-weight: 600; transition: all 0.3s; hover: color: #1e3a5f;"><span style="font-size: 1.2rem;">▶</span> Voir la vidéo</a></div>`;
+                    }
+
+                    card.innerHTML = html;
+                    masonry.appendChild(card);
+                    visibleCount++;
+                }
+            });
+
+            // Show/hide no results
+            const noResults = document.getElementById('noExpResults');
+            if (visibleCount === 0) {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+        }
+
+        function setupExperienceFilters() {
+            const expYearStart = document.getElementById('expYearStart');
+            const expYearEnd = document.getElementById('expYearEnd');
+            const expYearStartDisplay = document.getElementById('expYearStart-display');
+            const expYearEndDisplay = document.getElementById('expYearEnd-display');
+
+            // Skip if filter elements don't exist
+            if (!expYearStart || !expYearEnd || !expYearStartDisplay || !expYearEndDisplay) {
+                return;
+            }
+
+            const expThemeButtons = document.querySelectorAll('.exp-theme-btn');
+
+            // Initialize sliders with min/max from data
+            expYearStart.min = minYear;
+            expYearStart.max = maxYear;
+            expYearStart.value = minYear;
+
+            expYearEnd.min = minYear;
+            expYearEnd.max = maxYear;
+            expYearEnd.value = maxYear;
+
+            // Update display
+            expYearStartDisplay.textContent = minYear;
+            expYearEndDisplay.textContent = maxYear;
+
+            // Year range sliders
+            const updateYearDisplay = () => {
+                let startVal = parseInt(expYearStart.value);
+                let endVal = parseInt(expYearEnd.value);
+
+                // Ensure start is not greater than end
+                if (startVal > endVal) {
+                    [startVal, endVal] = [endVal, startVal];
+                    expYearStart.value = startVal;
+                    expYearEnd.value = endVal;
+                }
+
+                expYearStartDisplay.textContent = startVal;
+                expYearEndDisplay.textContent = endVal;
+                renderExperiences();
+            };
+
+            expYearStart.addEventListener('input', updateYearDisplay);
+            expYearEnd.addEventListener('input', updateYearDisplay);
+
+            // Category buttons
+            expThemeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    button.classList.toggle('active');
+                    renderExperiences();
+                });
+            });
+        }
+
+        // EVENTS - Load from Google Sheets
+        const EVENTS_SPREADSHEET_ID = '1-ykF9j2iu1By8OL_WecmUN7JER_8zRbeB8w3V45zl8s';
+        const EVENTS_GID = '567525720'; // Evenement-a-venir sheet
+        let eventsData = [];
+
+        async function loadEventsFromSheet() {
+            try {
+                // Utiliser l'export CSV de Google Sheets avec le GID spécifique
+                const eventsUrl = `https://docs.google.com/spreadsheets/d/${EVENTS_SPREADSHEET_ID}/export?format=csv&gid=${EVENTS_GID}`;
+                const corsUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(eventsUrl)}`;
+
+                const response = await fetch(corsUrl);
+                const csv = await response.text();
+
+                eventsData = [];
+
+                // Parser CSV robuste qui gère les guillemets
+                const parseCSVLine = (line) => {
+                    const result = [];
+                    let current = '';
+                    let insideQuotes = false;
+
+                    for (let i = 0; i < line.length; i++) {
+                        const char = line[i];
+                        const nextChar = line[i + 1];
+
+                        if (char === '"') {
+                            if (insideQuotes && nextChar === '"') {
+                                current += '"';
+                                i++;
+                            } else {
+                                insideQuotes = !insideQuotes;
+                            }
+                        } else if (char === ',' && !insideQuotes) {
+                            result.push(current.trim());
+                            current = '';
+                        } else {
+                            current += char;
+                        }
+                    }
+                    result.push(current.trim());
+                    return result;
+                };
+
+                // Parcer le CSV
+                const lines = csv.split('\n');
+
+                // Sauter la première ligne (en-têtes)
+                for (let i = 1; i < lines.length; i++) {
+                    const line = lines[i].trim();
+                    if (!line) continue;
+
+                    // Utiliser le parser robuste
+                    const cells = parseCSVLine(line);
+
+                    if (cells.length >= 3 && cells[0] && cells[1]) {
+                        const langue = cells[5] || 'FR'; // Langue par défaut FR
+
+                        // Filtrer par langue actuelle
+                        if (langue.toUpperCase() !== currentLang.toUpperCase()) {
+                            continue;
+                        }
+
+                        const event = {
+                            date: cells[0],
+                            title: cells[1],
+                            description: cells[2],
+                            link: cells[3] || '#',
+                            image: cells[4] || 'https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp',
+                            langue: langue
+                        };
+
+                        eventsData.push(event);
+                    }
+                }
+
+                // Render events
+                renderEvents();
+            } catch (error) {
+                console.error('Erreur chargement Google Sheets (Events):', error);
+            }
+        }
+
+        function renderEvents() {
+            const eventsGrid = document.getElementById('eventsGrid');
+            eventsGrid.innerHTML = '';
+
+            eventsData.forEach(event => {
+                const eventCard = document.createElement('div');
+                eventCard.className = 'event-card';
+
+                eventCard.innerHTML = `
+                    <div class="event-image">
+                        <img src="${event.image}" alt="${event.title}">
+                    </div>
+                    <div class="event-content">
+                        <span class="event-date">${event.date}</span>
+                        <h3 class="event-title">${event.title}</h3>
+                        <p class="event-description">${event.description}</p>
+                        <a href="${event.link}" class="event-button">En savoir plus</a>
+                    </div>
+                `;
+
+                eventsGrid.appendChild(eventCard);
+            });
+
+            // Show/hide no results message
+            if (eventsData.length === 0) {
+                eventsGrid.innerHTML = '<p style="text-align: center; grid-column: 1/-1; color: #999;">Aucun événement prévu pour le moment.</p>';
+            }
+        }
+
+        // LANGUAGE SYSTEM
+        const translations = {
+            fr: {
+                about: 'L\'Artiste',
+                gallery: 'Galerie',
+                skills: 'Formation et Diplômes',
+                services: 'Univers Musicaux',
+                experiences: 'Parcours Artistique',
+                events: 'Projets en cours',
+                contact: 'Contact',
+                aboutText1: 'Harpiste de formation internationale, diplômée du Conservatoire Régional de Tours et en Bachelor spécialisé à l\'université MDW de Vienne. Léa incarne l\'excellence artistique et la rigueur professionnelle, maîtrisant les contrastes les plus délicats du répertoire classique aux symphonies orchestrales d\'envergure.',
+                aboutText2: 'Régulièrement appelée pour les événements d\'institutions prestigieuses, de cérémonies d\'État et de concerts privés de très haut niveau, elle apporte à chaque prestation une dimension artistique exceptionnelle. Son approche allie écoute raffinée, technique impeccable et présence scénique remarquable.',
+                aboutText3: '',
+                formation: 'Diplôme supérieur en cours',
+                formationDesc: 'MDW – Université de musique et des arts du spectacle de Vienne',
+                technique: 'Diplôme national spécialisé',
+                techniqueDesc: 'CRR de Tours – Diplôme d\'Études Musicales (DEM)',
+                contact_title: 'Contact',
+                contact_email: 'Email',
+                contact_phone: 'Téléphone',
+                contact_social: 'Réseaux',
+                contact_lead: 'Discutons de votre projet musical. Réponse rapide et disponibilité flexible pour vos besoins.',
+                watch_video: 'Voir la vidéo'
+            },
+            en: {
+                about: 'The Artist',
+                gallery: 'Gallery',
+                skills: 'Training and Diplomas',
+                services: 'Musical Universes',
+                experiences: 'Artistic Journey',
+                events: 'Current Projects',
+                contact: 'Contact',
+                aboutText1: 'International trained harpist, graduate of the Conservatoire Régional de Tours and currently pursuing a specialized Bachelor at MDW University in Vienna. Léa embodies artistic excellence and professional rigor, mastering the most delicate contrasts from classical repertoire to grand-scale symphonies.',
+                aboutText2: 'Regularly called for prestigious institutions, state ceremonies and high-level private concerts, she brings exceptional artistic dimension to every performance. Her approach combines refined listening, impeccable technique and remarkable stage presence.',
+                aboutText3: '',
+                formation: 'Advanced Diploma in Progress',
+                formationDesc: 'MDW – University of Music and Performing Arts Vienna',
+                technique: 'National Specialized Diploma',
+                techniqueDesc: 'CRR Tours – Diploma of Musical Studies (DEM)',
+                contact_title: 'Contact',
+                contact_email: 'Email',
+                contact_phone: 'Phone',
+                contact_social: 'Social Networks',
+                contact_lead: 'Let\'s discuss your musical project. Quick response and flexible availability for your needs.',
+                watch_video: 'Watch Video'
+            },
+            de: {
+                about: 'Die Künstlerin',
+                gallery: 'Galerie',
+                skills: 'Ausbildung und Diplome',
+                services: 'Musikalische Welten',
+                experiences: 'Künstlerische Laufbahn',
+                events: 'Aktuelle Projekte',
+                contact: 'Kontakt',
+                aboutText1: 'International ausgebildete Harfenistin, Absolventin des Conservatoire Régional de Tours und derzeit in einem spezialisierten Bachelor an der MDW Universität Wien. Léa verkörpert künstlerische Exzellenz und berufliche Präzision und beherrscht die subtilsten Kontraste vom klassischen Repertoire bis zu großangelegten Sinfonien.',
+                aboutText2: 'Regelmäßig für prestigeträchtige Institutionen, staatliche Zeremonien und hochwertige Privatkonzerte engagiert, bringt sie zu jedem Auftritt eine außergewöhnliche künstlerische Dimension. Ihr Ansatz verbindet verfeinerte Musikalität, makellose Technik und bemerkenswerte Bühnenpräsenz.',
+                aboutText3: '',
+                formation: 'Fortgeschrittenes Diplom im Gange',
+                formationDesc: 'MDW – Universität für Musik und darstellende Kunst Wien',
+                technique: 'Nationales Fachdiplom',
+                techniqueDesc: 'CRR Tours – Diplom für Musikstudien (DEM)',
+                contact_title: 'Kontakt',
+                contact_email: 'E-Mail',
+                contact_phone: 'Telefon',
+                contact_social: 'Soziale Netzwerke',
+                contact_lead: 'Lassen Sie uns über Ihr Musikprojekt sprechen. Schnelle Antwort und flexible Verfügbarkeit für Ihre Anforderungen.',
+                watch_video: 'Video Ansehen'
+            }
+        };
+
+        let currentLang = localStorage.getItem('language') || 'fr';
+
+        function changeLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+            document.documentElement.lang = lang;
+
+            // Update all nav links
+            const navLinks = {
+                '#about': translations[lang].about,
+                '#gallery': translations[lang].gallery,
+                '#skills': translations[lang].skills,
+                '#services': translations[lang].services,
+                '#events': translations[lang].events,
+                '#contact': translations[lang].contact
+            };
+
+            document.querySelectorAll('.navbar-menu a, .mobile-menu a').forEach(link => {
+                const href = link.getAttribute('href');
+                if (navLinks[href]) {
+                    link.textContent = navLinks[href];
+                }
+            });
+
+            // Update section titles
+            const sectionTitles = {
+                'about': translations[lang].about,
+                'gallery': translations[lang].gallery,
+                'skills': translations[lang].skills,
+                'services': translations[lang].services,
+                'experiences': translations[lang].experiences,
+                'events': translations[lang].events,
+                'testimonials': translations[lang].about,
+                'contact': translations[lang].contact
+            };
+
+            document.querySelectorAll('section h2').forEach(h2 => {
+                const section = h2.closest('section');
+                if (section && section.id && sectionTitles[section.id]) {
+                    h2.textContent = sectionTitles[section.id];
+                }
+            });
+
+            // Update contact lead text
+            const contactLead = document.querySelector('#contact .section-lead');
+            if (contactLead) {
+                contactLead.innerHTML = translations[lang].contact_lead;
+            }
+
+            // Update about section text
+            const aboutTexts = document.querySelectorAll('.about-text p');
+            if (aboutTexts.length >= 3) {
+                aboutTexts[0].textContent = translations[lang].aboutText1;
+                aboutTexts[1].textContent = translations[lang].aboutText2;
+                aboutTexts[2].textContent = translations[lang].aboutText3;
+            }
+
+            // Update skill cards
+            const skillCards = document.querySelectorAll('.skill-card');
+            if (skillCards.length >= 2) {
+                skillCards[0].querySelector('h3').textContent = translations[lang].formation;
+                skillCards[0].querySelector('p').textContent = translations[lang].formationDesc;
+                skillCards[1].querySelector('h3').textContent = translations[lang].technique;
+                skillCards[1].querySelector('p').textContent = translations[lang].techniqueDesc;
+            }
+
+            // Update language selector trigger and active state
+            const langTrigger = document.getElementById('langTrigger');
+            if (langTrigger) {
+                const langNames = { fr: 'FR', en: 'EN', de: 'DE' };
+                langTrigger.textContent = langNames[lang];
+            }
+
+            document.querySelectorAll('.lang-option').forEach(option => {
+                if (option.dataset.lang === lang) {
+                    option.classList.add('active');
+                } else {
+                    option.classList.remove('active');
+                }
+            });
+
+            // Close dropdown after selection
+            const langDropdown = document.querySelector('.lang-dropdown');
+            if (langDropdown) {
+                langDropdown.classList.remove('active');
+            }
+
+            // Reload events and experiences with the new language
+            try {
+                loadEventsFromSheet();
+                loadExperiencesFromSheet();
+            } catch (e) {
+                console.error('Error loading data:', e);
+            }
+        }
+
+        // Initialize when DOM is ready
+        console.log('Script loaded - setting up DOMContentLoaded');
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('✓ DOM Content Loaded event triggered');
+
+            // Setup language selector dropdown
+            const langTrigger = document.getElementById('langTrigger');
+            const langDropdown = document.querySelector('.lang-dropdown');
+
+            // Toggle dropdown on trigger click (mobile and hover fallback)
+            if (langTrigger) {
+                langTrigger.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    langDropdown.classList.toggle('active');
+                });
+            }
+
+            // Setup language option buttons
+            document.querySelectorAll('.lang-option').forEach(option => {
+                option.addEventListener('click', () => {
+                    changeLanguage(option.dataset.lang);
+                });
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', () => {
+                if (langDropdown) {
+                    langDropdown.classList.remove('active');
+                }
+            });
+
+            // Load data ONLY ONCE with current language
+            setTimeout(() => {
+                changeLanguage(currentLang);
+            }, 500);
+
+            // LIGHTBOX GALLERY
+            console.log('✓ DOMContentLoaded - Setup starting');
+
+            // EMAILJS - Contact Form
+            const contactForm = document.querySelector('.contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+
+                    const submitBtn = contactForm.querySelector('.submit-btn');
+                    const originalText = submitBtn.textContent;
+                    submitBtn.textContent = 'Envoi en cours...';
+                    submitBtn.disabled = true;
+
+                    try {
+                        // Prepare form data with correct template variables
+                        const formData = new FormData(contactForm);
+                        const templateParams = {
+                            from_name: formData.get('name'),
+                            from_email: formData.get('email'),
+                            message: formData.get('message')
+                        };
+
+                        await emailjs.send('service_xug3j46', 'template_2i1sic7', templateParams);
+
+                        // Success message
+                        submitBtn.textContent = '✓ Message envoyé !';
+                        submitBtn.style.backgroundColor = '#4CAF50';
+
+                        // Reset form
+                        setTimeout(() => {
+                            contactForm.reset();
+                            submitBtn.textContent = originalText;
+                            submitBtn.style.backgroundColor = '';
+                            submitBtn.disabled = false;
+                        }, 2000);
+                    } catch (error) {
+                        console.error('Erreur EmailJS:', error);
+                        submitBtn.textContent = '❌ Erreur, réessayez';
+                        submitBtn.style.backgroundColor = '#f44336';
+
+                        setTimeout(() => {
+                            submitBtn.textContent = originalText;
+                            submitBtn.style.backgroundColor = '';
+                            submitBtn.disabled = false;
+                        }, 2000);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

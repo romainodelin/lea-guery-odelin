@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Admin - Léa Guéry-Odelin</title>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.css" />
+  <style>
+    .nc-root {
+      --nc-color-accent: #C9A86A;
+      --nc-color-accent-light: #D4C5A9;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    CMS_MANUAL_INIT = true;
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.loginWithPopup();
+        }
+      });
+    }
+    CMS.init();
+  </script>
+</body>
+</html>
