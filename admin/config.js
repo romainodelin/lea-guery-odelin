@@ -113,7 +113,7 @@ const config = {
       format: 'yml',
       create: true,
       fields: [
-        { label: 'Catégorie', name: 'category', widget: 'select', options: ['Formation Académique', 'Expériences Orchestrales', 'Musique de Chambre & Projets Artistiques', 'Expérience Pédagogique'] },
+        { label: 'Catégorie', name: 'category', widget: 'string', i18n: true },
         { label: 'Titre', name: 'title', widget: 'string', i18n: true },
         { label: 'Institution (optionnel)', name: 'institution', widget: 'string', required: false },
         { label: 'Période', name: 'period', widget: 'string' },

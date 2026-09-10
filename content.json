@@ -193,200 +193,638 @@
   "experiences": {
     "fr": [
       {
-        "category": "Formation Académique",
-        "title": "Bachelor Spécialisé - Cursus Concertiste",
-        "institution": "MDW – Université de Musique et des Arts du Spectacle de Vienne",
-        "period": "2022–2026",
-        "description": "Formation internationale de haut niveau, spécialisation concertiste. Référence académique européenne majeure pour le développement technique et artistique.",
-        "id": "01-formation-mdw"
-      },
-      {
-        "category": "Formation Académique",
-        "title": "Diplôme d'Études Musicales (DEM)",
-        "institution": "CRR de Tours",
-        "period": "Obtenu en 2022",
-        "description": "Diplôme français de référence pré-supérieur validant le niveau professionnel d'entrée et la spécialisation harpistique.",
-        "id": "02-dem-tours"
-      },
-      {
-        "category": "Expériences Orchestrales",
-        "title": "Harpiste – Akademisches Symphonie Orchester (ASO), Vienne",
+        "category": "Formation musicale",
+        "title": "Conservatoire à rayonnement régional de Tours - CRR",
         "institution": "",
-        "period": "2024–2026",
-        "description": "Expérience orchestrale académique internationale. Répertoire symphonique complet, collaborations avec chefs reconnus, présence en formations majeures.",
-        "id": "03-aso-vienne"
+        "period": "2020 - 2022",
+        "description": "Formation Diplôme d'études musicales (DEM)",
+        "video_link": "",
+        "image": "",
+        "id": "01-conservatoire-a-rayonnement-regional-de-tours-crr"
       },
       {
-        "category": "Musique de Chambre & Projets Artistiques",
-        "title": "Harpiste – Ensemble « Retro Wien »",
+        "category": "Formation musicale",
+        "title": "MDW - Université de musique et des arts du spectacle de Vienne",
+        "institution": "",
+        "period": "Depuis 2022",
+        "description": "Études bachelor - cursus concertiste",
+        "video_link": "",
+        "image": "",
+        "id": "02-mdw-universite-de-musique-et-des-arts-du-spectacle"
+      },
+      {
+        "category": "Enseignement",
+        "title": "Professeur de harpe",
+        "institution": "",
+        "period": "2024-2026",
+        "description": "Enseignement harpe en cours privé sur Vienne",
+        "video_link": "",
+        "image": "",
+        "id": "03-professeur-de-harpe"
+      },
+      {
+        "category": "Enseignement",
+        "title": "Remplacement professeur de Harpe",
+        "institution": "",
+        "period": "février 2024",
+        "description": "Remplacement enseignement harpe au CRR de Tours",
+        "video_link": "",
+        "image": "",
+        "id": "04-remplacement-professeur-de-harpe"
+      },
+      {
+        "category": "Enseignement",
+        "title": "Remplacement professeur de Harpe",
+        "institution": "",
+        "period": "octobre 2021",
+        "description": "Remplacement enseignement harpe au CRD de Châteauroux",
+        "video_link": "",
+        "image": "",
+        "id": "05-remplacement-professeur-de-harpe"
+      },
+      {
+        "category": "Orchestre",
+        "title": "Harpiste à l'ASO",
+        "institution": "",
+        "period": "2024-2026",
+        "description": "Harpiste au sein de \"Akademisches Symphonie Orchester\"",
+        "video_link": "https://www.aso-wien.at/",
+        "image": "",
+        "id": "06-harpiste-a-l-aso"
+      },
+      {
+        "category": "Orchestre",
+        "title": "Harpiste de l'ensemble \"Retro Wien\"",
         "institution": "",
         "period": "Depuis 2025",
-        "description": "Travail d'ensemble collaboratif, diffusion culturelle régulière, diversification stylistique et exploration musicale.",
-        "id": "04-retro-wien"
+        "description": "",
+        "video_link": "https://www.ensembleretrovienna.com/projekte.html",
+        "image": "",
+        "id": "07-harpiste-de-l-ensemble-retro-wien"
       },
       {
-        "category": "Musique de Chambre & Projets Artistiques",
-        "title": "Harpiste – Live Music Now (LMN)",
+        "category": "Formation",
+        "title": "Harpiste de LMN",
         "institution": "",
         "period": "Depuis 2023",
-        "description": "Programme sélectif de concerts solidaires et accessibilité musicale. Forte reconnaissance artistique associée à un impact sociétal positif.",
-        "id": "05-live-music-now"
+        "description": "Harpiste au sein de l'association (Live Music Now)",
+        "video_link": "https://livemusicnow-wien.at/musiker/guery-odelin-lea/",
+        "image": "",
+        "id": "08-harpiste-de-lmn"
       },
       {
-        "category": "Musique de Chambre & Projets Artistiques",
-        "title": "Harpiste – Première de l'Oratorio « Simone »",
-        "institution": "Votivskirche, Vienne — Compositrice : Franziska Roth",
-        "period": "14 mars 2026",
-        "description": "Création contemporaine en lieu prestigieux. Forte valeur artistique : innovation créative et reconnaissance académique.",
-        "id": "06-oratorio-simone"
-      },
-      {
-        "category": "Expérience Pédagogique",
-        "title": "Professeure de Harpe – Cours Privés, Vienne",
+        "category": "Concerts",
+        "title": "Oratorio \"Simone\" - PREMIERE à la Votivskirche",
         "institution": "",
-        "period": "2024–2026",
-        "description": "Enseignement régulier et transmission pédagogique. Autonomie professionnelle, développement de techniques d'enseignement personnalisé.",
-        "id": "07-cours-prives-vienne"
+        "period": "14.03.2026 à 11h et à 15h",
+        "description": "Oratorio basé sur la vie de Simone Veil. Compositrice : Franziska Roth",
+        "video_link": "",
+        "image": "",
+        "id": "09-oratorio-simone-premiere-a-la-votivskirche"
       },
       {
-        "category": "Expérience Pédagogique",
-        "title": "Remplacements Institutionnels en Conservatoires",
+        "category": "Concerts",
+        "title": "Requiem de Brahms",
         "institution": "",
-        "period": "Février 2024 / Octobre 2021",
-        "description": "CRR de Tours — Remplacement professeure de harpe (février 2024). CRD de Châteauroux — Remplacement professeure de harpe (octobre 2021). Expérience reconnue en conservatoire, crédibilité pédagogique institutionnelle.",
-        "id": "08-remplacements-conservatoires"
+        "period": "13/05/2026",
+        "description": "Concert à la cathédrale Sainte-Étienne",
+        "video_link": "",
+        "image": "",
+        "id": "10-requiem-de-brahms"
+      },
+      {
+        "category": "Concerts",
+        "title": "Matinale harpe",
+        "institution": "",
+        "period": "23/05/2026",
+        "description": "Concert de classe de harpe concertiste",
+        "video_link": "",
+        "image": "",
+        "id": "11-matinale-harpe"
+      },
+      {
+        "category": "Concerts",
+        "title": "12 concerts avec l'association LMN (avec flûte; violon; guitare)",
+        "institution": "",
+        "period": "Depuis Décembre 2023",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "12-12-concerts-avec-l-association-lmn-avec-flute-viol"
+      },
+      {
+        "category": "Concerts passés",
+        "title": "Concert de harpe de l'Avent",
+        "institution": "",
+        "period": "10/12/2025",
+        "description": "Concert à Hauptbahnof",
+        "video_link": "",
+        "image": "",
+        "id": "13-concert-de-harpe-de-l-avent"
+      },
+      {
+        "category": "Concerts passés",
+        "title": "Concert à la mémoire de Manos Hadjidakis",
+        "institution": "",
+        "period": "17/11/2025",
+        "description": "Concert à l'ORF - Radio Kultur Haus",
+        "video_link": "",
+        "image": "",
+        "id": "14-concert-a-la-memoire-de-manos-hadjidakis"
+      },
+      {
+        "category": "Concerts passés",
+        "title": "Concert de harpe celtique",
+        "institution": "",
+        "period": "16/10/2025",
+        "description": "Concert au Nachbarschaftszentren",
+        "video_link": "",
+        "image": "",
+        "id": "15-concert-de-harpe-celtique"
+      },
+      {
+        "category": "Concerts passés",
+        "title": "Aisha & Lea : voix et harpe",
+        "institution": "",
+        "period": "29/09/2025",
+        "description": "Concert au Tunnel Vienna Live : jazz et musique alternative",
+        "video_link": "",
+        "image": "",
+        "id": "16-aisha-lea-voix-et-harpe"
+      },
+      {
+        "category": "Concerts passés",
+        "title": "Concert symphonique de l'ASO au Musikverein",
+        "institution": "",
+        "period": "13/07/2025",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "17-concert-symphonique-de-l-aso-au-musikverein"
+      },
+      {
+        "category": "Concerts passés",
+        "title": "Harpe celtique et musique électronique",
+        "institution": "",
+        "period": "06/06/2025",
+        "description": "concert d'art sonore au Standlpunkt",
+        "video_link": "",
+        "image": "",
+        "id": "18-harpe-celtique-et-musique-electronique"
+      },
+      {
+        "category": "Vergangene Konzerte",
+        "title": "Sinfoniekonzert des ASO im Musikverein",
+        "institution": "",
+        "period": "18/01/2025",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "19-sinfoniekonzert-des-aso-im-musikverein"
+      },
+      {
+        "category": "Vergangene Konzerte",
+        "title": "Sinfoniekonzert des ASO im Musikverein",
+        "institution": "",
+        "period": "19/01/2025",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "20-sinfoniekonzert-des-aso-im-musikverein"
+      },
+      {
+        "category": "Concerts passés",
+        "title": "Concert symphonique de l'ASO au Musikverein",
+        "institution": "",
+        "period": "28/07/2024",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "21-concert-symphonique-de-l-aso-au-musikverein"
       }
     ],
     "en": [
       {
-        "category": "Formation Académique",
-        "title": "Bachelor Spécialisé - Cursus Concertiste",
-        "institution": "MDW – Université de Musique et des Arts du Spectacle de Vienne",
-        "period": "2022–2026",
-        "description": "Formation internationale de haut niveau, spécialisation concertiste. Référence académique européenne majeure pour le développement technique et artistique.",
-        "id": "01-formation-mdw"
-      },
-      {
-        "category": "Formation Académique",
-        "title": "Diplôme d'Études Musicales (DEM)",
-        "institution": "CRR de Tours",
-        "period": "Obtenu en 2022",
-        "description": "Diplôme français de référence pré-supérieur validant le niveau professionnel d'entrée et la spécialisation harpistique.",
-        "id": "02-dem-tours"
-      },
-      {
-        "category": "Expériences Orchestrales",
-        "title": "Harpiste – Akademisches Symphonie Orchester (ASO), Vienne",
+        "category": "Musical formation",
+        "title": "Regional Conservatory of Music and Dance of Tours",
         "institution": "",
-        "period": "2024–2026",
-        "description": "Expérience orchestrale académique internationale. Répertoire symphonique complet, collaborations avec chefs reconnus, présence en formations majeures.",
-        "id": "03-aso-vienne"
+        "period": "2020 - 2022",
+        "description": "Training Diploma in Music Studies (DEM)",
+        "video_link": "",
+        "image": "",
+        "id": "01-conservatoire-a-rayonnement-regional-de-tours-crr"
       },
       {
-        "category": "Musique de Chambre & Projets Artistiques",
-        "title": "Harpiste – Ensemble « Retro Wien »",
+        "category": "Musical formation",
+        "title": "MDW - University of Music and Performing Arts Vienna",
         "institution": "",
-        "period": "Depuis 2025",
-        "description": "Travail d'ensemble collaboratif, diffusion culturelle régulière, diversification stylistique et exploration musicale.",
-        "id": "04-retro-wien"
+        "period": "Since 2022",
+        "description": "Bachelor's degree programmes - concert harpist course",
+        "video_link": "",
+        "image": "",
+        "id": "02-mdw-universite-de-musique-et-des-arts-du-spectacle"
       },
       {
-        "category": "Musique de Chambre & Projets Artistiques",
-        "title": "Harpiste – Live Music Now (LMN)",
+        "category": "Teaching",
+        "title": "Private harp teacher",
         "institution": "",
-        "period": "Depuis 2023",
-        "description": "Programme sélectif de concerts solidaires et accessibilité musicale. Forte reconnaissance artistique associée à un impact sociétal positif.",
-        "id": "05-live-music-now"
+        "period": "2024-2026",
+        "description": "Private harp lessons in Vienna",
+        "video_link": "",
+        "image": "",
+        "id": "03-professeur-de-harpe"
       },
       {
-        "category": "Musique de Chambre & Projets Artistiques",
-        "title": "Harpiste – Première de l'Oratorio « Simone »",
-        "institution": "Votivskirche, Vienne — Compositrice : Franziska Roth",
-        "period": "14 mars 2026",
-        "description": "Création contemporaine en lieu prestigieux. Forte valeur artistique : innovation créative et reconnaissance académique.",
-        "id": "06-oratorio-simone"
-      },
-      {
-        "category": "Expérience Pédagogique",
-        "title": "Professeure de Harpe – Cours Privés, Vienne",
+        "category": "Teaching",
+        "title": "Replacement Harp Teacher",
         "institution": "",
-        "period": "2024–2026",
-        "description": "Enseignement régulier et transmission pédagogique. Autonomie professionnelle, développement de techniques d'enseignement personnalisé.",
-        "id": "07-cours-prives-vienne"
+        "period": "February 2024",
+        "description": "Replacement harp teacher at the CRR in Tours",
+        "video_link": "",
+        "image": "",
+        "id": "04-remplacement-professeur-de-harpe"
       },
       {
-        "category": "Expérience Pédagogique",
-        "title": "Remplacements Institutionnels en Conservatoires",
+        "category": "Teaching",
+        "title": "Replacement Harp Teacher",
         "institution": "",
-        "period": "Février 2024 / Octobre 2021",
-        "description": "CRR de Tours — Remplacement professeure de harpe (février 2024). CRD de Châteauroux — Remplacement professeure de harpe (octobre 2021). Expérience reconnue en conservatoire, crédibilité pédagogique institutionnelle.",
-        "id": "08-remplacements-conservatoires"
+        "period": "Oktober 2021",
+        "description": "Replacement harp teacher at the CRD in Châteauroux",
+        "video_link": "",
+        "image": "",
+        "id": "05-remplacement-professeur-de-harpe"
+      },
+      {
+        "category": "Orchestra",
+        "title": "Harpist with the ASO",
+        "institution": "",
+        "period": "2024-2026",
+        "description": "Harpist with the \"Akademisches Sinfonie Orchester\"",
+        "video_link": "https://www.aso-wien.at/",
+        "image": "",
+        "id": "06-harpiste-a-l-aso"
+      },
+      {
+        "category": "Orchestra",
+        "title": "Harpist with the \"Retro Wien\" ensemble",
+        "institution": "",
+        "period": "Since 2025",
+        "description": "",
+        "video_link": "https://www.ensembleretrovienna.com/projekte.html",
+        "image": "",
+        "id": "07-harpiste-de-l-ensemble-retro-wien"
+      },
+      {
+        "category": "Formation",
+        "title": "Harpist at LMN",
+        "institution": "",
+        "period": "Since 2023",
+        "description": "Harpist at the Live Music Now association",
+        "video_link": "https://livemusicnow-wien.at/musiker/guery-odelin-lea/",
+        "image": "",
+        "id": "08-harpiste-de-lmn"
+      },
+      {
+        "category": "Concerts",
+        "title": "Oratorio \"Simone\" - PREMIERE at the Votiv Church",
+        "institution": "",
+        "period": "14/03/2026 at 11 a.m. and 3 p.m.",
+        "description": "Oratorio based on the life of Simone Veil. Composer: Franziska Roth",
+        "video_link": "",
+        "image": "",
+        "id": "09-oratorio-simone-premiere-a-la-votivskirche"
+      },
+      {
+        "category": "Concerts",
+        "title": "Brahms' Requiem",
+        "institution": "",
+        "period": "13/05/2026",
+        "description": "Concert at St. Stephen's Cathedral",
+        "video_link": "",
+        "image": "",
+        "id": "10-requiem-de-brahms"
+      },
+      {
+        "category": "Concerts",
+        "title": "harp recital",
+        "institution": "",
+        "period": "23/05/2026",
+        "description": "Harp class concert - concert performer",
+        "video_link": "",
+        "image": "",
+        "id": "11-matinale-harpe"
+      },
+      {
+        "category": "Concerts",
+        "title": "12 concerts with the LMN association (with flute, violin, guitar)",
+        "institution": "",
+        "period": "Since December 2023",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "12-12-concerts-avec-l-association-lmn-avec-flute-viol"
+      },
+      {
+        "category": "Past concerts",
+        "title": "Advent harp concert",
+        "institution": "",
+        "period": "10/12/2025",
+        "description": "Concert at Hauptbahnof",
+        "video_link": "",
+        "image": "",
+        "id": "13-concert-de-harpe-de-l-avent"
+      },
+      {
+        "category": "Past concerts",
+        "title": "Concert in memory of composer Manos Hadjidakis",
+        "institution": "",
+        "period": "17/11/2025",
+        "description": "Concert at ORF - Radio Cultur House",
+        "video_link": "",
+        "image": "",
+        "id": "14-concert-a-la-memoire-de-manos-hadjidakis"
+      },
+      {
+        "category": "Past concerts",
+        "title": "Celtic harp concert",
+        "institution": "",
+        "period": "16/10/2025",
+        "description": "Concert at neighbourhood centres",
+        "video_link": "",
+        "image": "",
+        "id": "15-concert-de-harpe-celtique"
+      },
+      {
+        "category": "Past concerts",
+        "title": "Aisha & Lea: Voice and harp",
+        "institution": "",
+        "period": "29/09/2025",
+        "description": "Concert at Tunnel Vienna Live: jazz and alternative music",
+        "video_link": "",
+        "image": "",
+        "id": "16-aisha-lea-voix-et-harpe"
+      },
+      {
+        "category": "Past concerts",
+        "title": "Sinfoniekonzert des ASO im Musikverein",
+        "institution": "",
+        "period": "13/07/2025",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "17-concert-symphonique-de-l-aso-au-musikverein"
+      },
+      {
+        "category": "Past concerts",
+        "title": "Celtic harp and electronic music",
+        "institution": "",
+        "period": "06/06/2025",
+        "description": "sound art concert at Standlpunkte",
+        "video_link": "",
+        "image": "",
+        "id": "18-harpe-celtique-et-musique-electronique"
+      },
+      {
+        "category": "Past concerts",
+        "title": "Sinfoniekonzert des ASO im Musikverein",
+        "institution": "",
+        "period": "18/01/2025",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "19-sinfoniekonzert-des-aso-im-musikverein"
+      },
+      {
+        "category": "Past concerts",
+        "title": "Sinfoniekonzert des ASO im Musikverein",
+        "institution": "",
+        "period": "19/01/2025",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "20-sinfoniekonzert-des-aso-im-musikverein"
+      },
+      {
+        "category": "Past concerts",
+        "title": "ASO symphony concert at the Musikverein",
+        "institution": "",
+        "period": "28/07/2024",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "21-concert-symphonique-de-l-aso-au-musikverein"
       }
     ],
     "de": [
       {
-        "category": "Formation Académique",
-        "title": "Bachelor Spécialisé - Cursus Concertiste",
-        "institution": "MDW – Université de Musique et des Arts du Spectacle de Vienne",
-        "period": "2022–2026",
-        "description": "Formation internationale de haut niveau, spécialisation concertiste. Référence académique européenne majeure pour le développement technique et artistique.",
-        "id": "01-formation-mdw"
-      },
-      {
-        "category": "Formation Académique",
-        "title": "Diplôme d'Études Musicales (DEM)",
-        "institution": "CRR de Tours",
-        "period": "Obtenu en 2022",
-        "description": "Diplôme français de référence pré-supérieur validant le niveau professionnel d'entrée et la spécialisation harpistique.",
-        "id": "02-dem-tours"
-      },
-      {
-        "category": "Expériences Orchestrales",
-        "title": "Harpiste – Akademisches Symphonie Orchester (ASO), Vienne",
+        "category": "Musikalische Ausbildung",
+        "title": "Konservatorium mit regionaler Ausstrahlung in Tours",
         "institution": "",
-        "period": "2024–2026",
-        "description": "Expérience orchestrale académique internationale. Répertoire symphonique complet, collaborations avec chefs reconnus, présence en formations majeures.",
-        "id": "03-aso-vienne"
+        "period": "2020 - 2022",
+        "description": "Ausbildung Diplom für Musikstudien (DEM)",
+        "video_link": "",
+        "image": "",
+        "id": "01-conservatoire-a-rayonnement-regional-de-tours-crr"
       },
       {
-        "category": "Musique de Chambre & Projets Artistiques",
-        "title": "Harpiste – Ensemble « Retro Wien »",
+        "category": "Musikalische Ausbildung",
+        "title": "MDW - Universität für Musik und darstellende Kunst Wien",
         "institution": "",
-        "period": "Depuis 2025",
-        "description": "Travail d'ensemble collaboratif, diffusion culturelle régulière, diversification stylistique et exploration musicale.",
-        "id": "04-retro-wien"
+        "period": "Seit 2022",
+        "description": "Bachelor-Studium – Konzertfach Harfe",
+        "video_link": "",
+        "image": "",
+        "id": "02-mdw-universite-de-musique-et-des-arts-du-spectacle"
       },
       {
-        "category": "Musique de Chambre & Projets Artistiques",
-        "title": "Harpiste – Live Music Now (LMN)",
+        "category": "Unterricht",
+        "title": "Privatlehrerin für Harfe",
         "institution": "",
-        "period": "Depuis 2023",
-        "description": "Programme sélectif de concerts solidaires et accessibilité musicale. Forte reconnaissance artistique associée à un impact sociétal positif.",
-        "id": "05-live-music-now"
+        "period": "2024-2026",
+        "description": "Harfenunterricht in Privatstunden in Wien",
+        "video_link": "",
+        "image": "",
+        "id": "03-professeur-de-harpe"
       },
       {
-        "category": "Musique de Chambre & Projets Artistiques",
-        "title": "Harpiste – Première de l'Oratorio « Simone »",
-        "institution": "Votivskirche, Vienne — Compositrice : Franziska Roth",
-        "period": "14 mars 2026",
-        "description": "Création contemporaine en lieu prestigieux. Forte valeur artistique : innovation créative et reconnaissance académique.",
-        "id": "06-oratorio-simone"
-      },
-      {
-        "category": "Expérience Pédagogique",
-        "title": "Professeure de Harpe – Cours Privés, Vienne",
+        "category": "Unterricht",
+        "title": "Vertretungslehrerin für Harfe",
         "institution": "",
-        "period": "2024–2026",
-        "description": "Enseignement régulier et transmission pédagogique. Autonomie professionnelle, développement de techniques d'enseignement personnalisé.",
-        "id": "07-cours-prives-vienne"
+        "period": "Februar 2024",
+        "description": "Stellvertretung für Harfenunterricht am CRR in Tours",
+        "video_link": "",
+        "image": "",
+        "id": "04-remplacement-professeur-de-harpe"
       },
       {
-        "category": "Expérience Pédagogique",
-        "title": "Remplacements Institutionnels en Conservatoires",
+        "category": "Unterricht",
+        "title": "Vertretungslehrerin für Harfe",
         "institution": "",
-        "period": "Février 2024 / Octobre 2021",
-        "description": "CRR de Tours — Remplacement professeure de harpe (février 2024). CRD de Châteauroux — Remplacement professeure de harpe (octobre 2021). Expérience reconnue en conservatoire, crédibilité pédagogique institutionnelle.",
-        "id": "08-remplacements-conservatoires"
+        "period": "October 2021",
+        "description": "Ersatz für Harfenunterricht am CRD in Châteauroux",
+        "video_link": "",
+        "image": "",
+        "id": "05-remplacement-professeur-de-harpe"
+      },
+      {
+        "category": "Orchester",
+        "title": "Harfenist beim ASO",
+        "institution": "",
+        "period": "2024-2026",
+        "description": "Harfenistin im \"Akademischen Sinfonieorchester\"",
+        "video_link": "https://www.aso-wien.at/",
+        "image": "",
+        "id": "06-harpiste-a-l-aso"
+      },
+      {
+        "category": "Orchester",
+        "title": "Harfenist des Ensembles „Retro Wien“",
+        "institution": "",
+        "period": "Seit 2025",
+        "description": "",
+        "video_link": "https://www.ensembleretrovienna.com/projekte.html",
+        "image": "",
+        "id": "07-harpiste-de-l-ensemble-retro-wien"
+      },
+      {
+        "category": "Formation",
+        "title": "Harfenistin von LMN",
+        "institution": "",
+        "period": "Seit 2023",
+        "description": "Harfenistin im Verein \"Live Music Now\"",
+        "video_link": "https://livemusicnow-wien.at/musiker/guery-odelin-lea/",
+        "image": "",
+        "id": "08-harpiste-de-lmn"
+      },
+      {
+        "category": "Konzerte",
+        "title": "Oratorium „Simone“ – PREMIERE in der Votivkirche",
+        "institution": "",
+        "period": "14.03.2026 um 11 Uhr und um 15 Uhr",
+        "description": "Oratorium über das Leben von Simone Veil. Komponistin: Franziska Roth",
+        "video_link": "",
+        "image": "",
+        "id": "09-oratorio-simone-premiere-a-la-votivskirche"
+      },
+      {
+        "category": "Konzerte",
+        "title": "Requiem von Brahms",
+        "institution": "",
+        "period": "13/05/2026",
+        "description": "Konzert am Stephansdom",
+        "video_link": "",
+        "image": "",
+        "id": "10-requiem-de-brahms"
+      },
+      {
+        "category": "Konzerte",
+        "title": "Harfenmatinee",
+        "institution": "",
+        "period": "23/05/2026",
+        "description": "Harfenkonzert der Klasse – Konzertfach",
+        "video_link": "",
+        "image": "",
+        "id": "11-matinale-harpe"
+      },
+      {
+        "category": "Konzerte",
+        "title": "12 Konzerte mit dem Verein LMN (mit Flöte, Violine, Gitarre)",
+        "institution": "",
+        "period": "Seit Dezember 2023",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "12-12-concerts-avec-l-association-lmn-avec-flute-viol"
+      },
+      {
+        "category": "Vergangene Konzerte",
+        "title": "Adventsharfenkonzert",
+        "institution": "",
+        "period": "10/12/2025",
+        "description": "Konzert am Hauptbahnhof",
+        "video_link": "",
+        "image": "",
+        "id": "13-concert-de-harpe-de-l-avent"
+      },
+      {
+        "category": "Vergangene Konzerte",
+        "title": "Konzert zum Gedenken an den Komponisten Manos Hadjidakis",
+        "institution": "",
+        "period": "17/11/2025",
+        "description": "Konzert im ORF – Radio Kultur Haus",
+        "video_link": "",
+        "image": "",
+        "id": "14-concert-a-la-memoire-de-manos-hadjidakis"
+      },
+      {
+        "category": "Vergangene Konzerte",
+        "title": "Keltisches Harfenkonzert",
+        "institution": "",
+        "period": "16/10/2025",
+        "description": "Konzert in den Nachbarschaftszentren",
+        "video_link": "",
+        "image": "",
+        "id": "15-concert-de-harpe-celtique"
+      },
+      {
+        "category": "Vergangene Konzerte",
+        "title": "Aisha & Lea : Stimme und Harfe",
+        "institution": "",
+        "period": "29/09/2025",
+        "description": "Konzert im Tunnel Vienna Live: Jazz und alternative Musik",
+        "video_link": "",
+        "image": "",
+        "id": "16-aisha-lea-voix-et-harpe"
+      },
+      {
+        "category": "Vergangene Konzerte",
+        "title": "Sinfoniekonzert des ASO im Musikverein",
+        "institution": "",
+        "period": "13/07/2025",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "17-concert-symphonique-de-l-aso-au-musikverein"
+      },
+      {
+        "category": "Vergangene Konzerte",
+        "title": "Keltische Harfe und elektronische Musik",
+        "institution": "",
+        "period": "06/06/2025",
+        "description": "Klangkunstkonzert im Standlpunkte",
+        "video_link": "",
+        "image": "",
+        "id": "18-harpe-celtique-et-musique-electronique"
+      },
+      {
+        "category": "Concerts passés",
+        "title": "Concert symphonique de l'ASO au Musikverein",
+        "institution": "",
+        "period": "18/01/2025",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "19-sinfoniekonzert-des-aso-im-musikverein"
+      },
+      {
+        "category": "Concerts passés",
+        "title": "Concert symphonique de l'ASO au Musikverein",
+        "institution": "",
+        "period": "19/01/2025",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "20-sinfoniekonzert-des-aso-im-musikverein"
+      },
+      {
+        "category": "Vergangene Konzerte",
+        "title": "Sinfoniekonzert des ASO im Musikverein",
+        "institution": "",
+        "period": "28/07/2024",
+        "description": "",
+        "video_link": "",
+        "image": "",
+        "id": "21-concert-symphonique-de-l-aso-au-musikverein"
       }
     ]
   },
@@ -453,7 +891,32 @@
     ]
   },
   "events": {
-    "fr": [],
+    "fr": [
+      {
+        "date": "14 février 2026",
+        "title": "Concert Classique - Salle Debussy",
+        "description": "Récital solo de harpe avec programme baroque et contemporain. Une soirée musicale intimiste pour découvrir les plus belles pièces du répertoire.",
+        "link": "https://www.canva.com/design/DAG4lz0z_Z0/EI8bLI-UFTod3nj80QLC5A/edit",
+        "image": "",
+        "id": "01-concert-classique-salle-debussy"
+      },
+      {
+        "date": "22 février 2026",
+        "title": "Ateliers Musicaux - Initiation Harpe",
+        "description": "Découvrez les secrets de la harpe lors d'ateliers participatifs. Parfait pour les enfants et les adultes curieux de musique.",
+        "link": "https://www.canva.com/design/DAG4lz0z_Z0/EI8bLI-UFTod3nj80QLC5A/edit",
+        "image": "",
+        "id": "02-ateliers-musicaux-initiation-harpe"
+      },
+      {
+        "date": "8 mars 2026",
+        "title": "Concert Classique - Salle Colomb",
+        "description": "Rejoignez-nous pour une tournée exceptionnelle à travers la France avec notre quartet en musique de chambre. Compositions originales et arrangements uniques.",
+        "link": "https://www.canva.com/design/DAG4lz0z_Z0/EI8bLI-UFTod3nj80QLC5A/edit",
+        "image": "",
+        "id": "03-concert-classique-salle-colomb"
+      }
+    ],
     "en": [],
     "de": []
   },
