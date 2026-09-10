@@ -42,7 +42,7 @@ function replaceBetween(source, marker, innerHtml) {
 function renderHero(data) {
   if (!data) return '';
   return `<div class="hero-image" data-parallax="0.5">
-    <img src="${escapeHtml(data.image)}" alt="${escapeHtml(data.title)}" loading="eager">
+    <img src="${escapeHtml(data.image)}" alt="${escapeHtml(data.title)}, ${escapeHtml(data.subtitle)}" loading="eager">
 </div>
 <div class="hero-content">
     <h1 class="hero-title">${escapeHtml(data.title)}</h1>
@@ -172,7 +172,7 @@ function renderContactInfo(data) {
 </div>
 ${data.whatsapp ? `<div class="contact-info-item">
     <span class="contact-label">Cliquer sur le numéro pour me contacter via WhatsApp</span>
-    <a href="https://wa.me/${escapeHtml(data.whatsapp)}" class="contact-value" target="_blank">+${escapeHtml(data.whatsapp)}</a>
+    <a href="https://wa.me/${escapeHtml(data.whatsapp.replace(/\D/g, ''))}" class="contact-value" target="_blank">${escapeHtml(data.whatsapp)}</a>
 </div>` : ''}
 <div class="contact-info-item">
     <span class="contact-label">Réseaux</span>
