@@ -962,6 +962,12 @@
         "id": "03-concert-classique-salle-colomb"
       },
       {
+        "date": "14.07.26",
+        "title": "Concert bobo",
+        "description": "Concert in a big hall with a classical solo harp programm",
+        "id": "concert-bobo"
+      },
+      {
         "date": "15 septembre 2040",
         "title": "Concert à tour eiffel",
         "description": "Concert à tour eiffelConcert à tour eiffelConcert à tour eiffelConcert à tour eiffelConcert à tour eiffelConcert à tour eiffelConcert à tour eiffelConcert à tour eiffelConcert à tour eiffel",
@@ -970,11 +976,17 @@
     ],
     "en": [
       {
+        "id": "concert-bobo"
+      },
+      {
         "title": "Eifel spectable",
         "id": "concert-à-tour-eiffel"
       }
     ],
     "de": [
+      {
+        "id": "concert-bobo"
+      },
       {
         "id": "concert-à-tour-eiffel"
       }
