@@ -51,6 +51,7 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SITE_LEA_484923 }}'
           channelId: live
           projectId: site-lea-484923
+          target: production
 
       - name: Comment PR with deploy status
         if: github.event_name == 'pull_request'
