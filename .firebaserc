@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "site-lea-484923"
+  },
+  "targets": {
+    "site-lea-484923": {
+      "hosting": {
+        "production": ["lea-guery-odelin"]
+      }
+    }
+  }
+}

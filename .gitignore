@@ -21,7 +21,6 @@ build/
 
 # Firebase
 .firebase/
-.firebaserc
 
 # Logs
 *.log
